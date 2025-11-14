@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   title: Chaching API - Prod 
-  description: 'The Chaching API provides a unified way to manage subscriptions, invoices, and payments with branded checkout experiences.
-It is designed for developers building billing flows similar to Stripe, but with lower transaction fees and full subscription management.'
+  description: 
+    $ref: desc.md
   version: '1.0' 
   contact: {}
 paths:

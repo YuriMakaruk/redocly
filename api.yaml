@@ -3,7 +3,7 @@ info:
   title: Chaching API - Prod 
   description: 
     $ref: description.md
-  version: '1.0' 
+  version: '2.0' 
   contact: {}
 paths:
   /customers:

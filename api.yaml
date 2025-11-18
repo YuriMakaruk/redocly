@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Chaching API
-  description: "# Overview\r\n\r\nThe Chaching API provides a unified way to manage subscriptions, invoices, and payments with branded checkout experiences.\r\n\r\nIt is designed for developers building billing flows similar to Stripe, but with lower transaction fees and full subscription management.\r\n\r\n- **Base URL**: `https://api.chaching.io/v1/`\r\n- **Format**: JSON over HTTPS\r\n- **Versioning**: Current version: `v1`\r\n\r\n# Authentication\r\n\r\nChaching API uses **Bearer tokens** for authentication.\r\n\r\nInclude your API key in the `Authorization` header with each request.\r\n\r\n**Example:**\r\n\r\n```\r\nAuthorization: Bearer sk_test_123456789\r\n```\r\n\r\nToken Lifecycle\r\n\r\n- Tokens are project-specific.\r\n- Expiration rules: TBD (fill in).\r\n- Refresh/rotation mechanism: TBD."
+  description: Chaching Service - API documentation.
   version: '1.0'
   contact: {}
 paths:

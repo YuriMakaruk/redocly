@@ -1,12 +1,17 @@
 openapi: 3.0.0
 info:
   title: Chaching API
-  description: Chaching Service - API documentation.
+  description: "# Overview\r\n\r\nThe Chaching API provides a unified way to manage subscriptions, invoices, and payments with branded checkout experiences.\r\n\r\nIt is designed for developers building billing flows similar to Stripe, but with lower transaction fees and full subscription management.\r\n\r\n- **Base URL**: `https://api.chaching.io/v1/`\r\n- **Format**: JSON over HTTPS\r\n- **Versioning**: Current version: `v1`\r\n\r\n# Authentication\r\n\r\nChaching API uses **Bearer tokens** for authentication.\r\n\r\nInclude your API key in the `Authorization` header with each request.\r\n\r\n**Example:**\r\n\r\n```\r\nAuthorization: Bearer sk_test_123456789\r\n```\r\n\r\nToken Lifecycle\r\n\r\n- Tokens are project-specific.\r\n- Expiration rules: TBD (fill in).\r\n- Refresh/rotation mechanism: TBD."
   version: '1.0'
   contact: {}
 paths:
   /customers:
     post:
+      description: 
+        Create a customer object. 
+        A customer represents an individual or business that you can bill for products and services. 
+        Customers can have associated payment methods, subscriptions, and invoices. 
+        The API returns the created customer object on success."
       operationId: CustomersController_create
       parameters:
         - name: cc-api-key
@@ -34,10 +39,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CustomersPublicDto'
-      summary: Create a new customer
+      summary: Create a customer
       tags:
         - Customers
     get:
+      description: Returns a list of your customers. The customers are returned sorted by creation date, with the most recent customers appearing first.
       operationId: CustomersController_getAllByAccount
       parameters:
         - name: search
@@ -96,6 +102,7 @@ paths:
         - Customers
   /customers/search:
     get:
+      description: Search for customers by matching their name or email address. Returns a list of customers that match the search criteria.
       operationId: CustomersController_search
       parameters:
         - name: search
@@ -124,6 +131,7 @@ paths:
         - Customers
   /customers/{id}:
     get:
+      description: Retrieve detailed information about a specific customer by their unique identifier.
       operationId: CustomersController_getDetails
       parameters:
         - name: id
@@ -148,6 +156,7 @@ paths:
       tags:
         - Customers
     patch:
+      description: Update an existing customer's information by their unique identifier. Only the fields provided in the request body will be updated.
       operationId: CustomersController_update
       parameters:
         - name: id
@@ -172,6 +181,7 @@ paths:
       tags:
         - Customers
     delete:
+      description: Permanently delete a customer from the system by their unique identifier. This action cannot be undone.
       operationId: CustomersController_remove
       parameters:
         - name: id
@@ -191,6 +201,7 @@ paths:
         - Customers
   /products/taxCodes:
     get:
+      description: A list of all tax codes available to add to products in order to enable specific tax calculations. Each tax code corresponds to a tax category (for example, “Shipping” or “General - Services”).
       operationId: ProductsController_getTaxesCodes
       parameters:
         - name: search
@@ -1088,7 +1099,102 @@ paths:
       summary: Cancels a subscription
       tags:
         - Subscriptions
-tags: []
+tags:
+  - name: Customers
+    description: |
+      This object represents a customer of your business. Use it to create recurring charges, save payment and contact information, and track payments that belong to the same customer. 
+
+      ## Available Endpoints - **Customer**
+
+      | **Methods** | **Endpoint** | Description | Auth Required | Supports "Try it out" |
+      | --- | --- | --- | --- | --- |
+      | **POST** | `/v1/customers` | Create a customer | Required | yes |
+      | **PATCH** | `/v1/customers/{id}` | Update a customer | Required | yes |
+      | **GET** | `/v1/customers/{kbAccountId}` | Retrieve a customer | Required | yes |
+      | **GET** | `/v1/customers` | List all customers | Required | yes |
+      | **DELETE** | `/v1/customers/{id}` | Delete a customer | Required | yes |
+      | **GET** | `/v1/customers/search` | Search customers | Required | yes |
+
+  - name: Products
+    description: |
+      Products describe the specific goods or services you offer to your customers. For example, you might offer a Standard and Premium version of your goods or service; each version would be a separate Product. 
+      ## Available Endpoints - Products
+
+      | **HTTP Method** | **Endpoint** | **Operation** | Auth Required | Supports “Try it out” |
+      | --- | --- | --- | --- | --- |
+      | **GET** | `/products/taxCodes` | Get tax codes with category names | Required | yes |
+      | **POST** | `/products` | Create a product | Required | yes |
+      | **PATCH** | `/products/:id` | Update a product | Required | yes |
+      | **GET** | `/products/{id`} | Retrieve a product | Required | yes |
+      | **GET** | `/products` | List all products | Required | yes |
+      | **DELETE** | `/products/:id` | Delete a product | Required | yes |
+
+  - name: Transactions
+    description: |
+      Transactions describe 
+      ## Available Endpoints - Transactions
+
+      | **Methods** | **Endpoint** | **Description** | **Auth Required** | **Supports “Try it out”** |
+      | --- | --- | --- | --- | --- |
+      |  |  |  | Required | yes |
+      |  |  |  | Required | yes |
+      |  |  |  | Required | yes |
+      |  |  |  | Required | yes |
+      |  |  |  | Required | yes |
+      |  |  |  | Required | yes |
+
+  - name: Invoices
+    description: |
+      Invoices are statements of amounts owed by a customer, and are either generated one-off, or generated periodically from a subscription.
+      ## Available Endpoints - Invoices  
+
+      | **Methods** | **Endpoint** | **Description** | **Auth Required** | **Supports “Try it out”** |
+      | --- | --- | --- | --- | --- |
+      | **POST** | `/invoices` | Create an invoice | Required | yes |
+      | **GET** | `/invoices/{id}` | Retrieve an invoice by ID | Required | yes |
+      | **GET** | `/invoices` | List all invoices | Required | yes |
+      | **PUT** | `/invoices/{id}` | Pay an invoice | Required | yes |
+      | **DELETE** | `/invoices/{id}` | Void an invoice | Required | yes |
+
+  - name: TaxRates
+    description: |
+      Tax rates are used to calculate tax on products and services. You can define multiple tax rates to accommodate different tax jurisdictions and rules.
+      ## Available Endpoints - Tax Rates
+
+      | **Methods** | **Endpoint** | **Description** | **Auth Required** | **Supports “Try it out”** |
+      | --- | --- | --- | --- | --- |
+      | **POST** | `/taxRates` | Create a tax rate | Required | yes |
+      | **GET** | `/taxRates/{id}` | Retrieve a tax rate by ID | Required | yes |
+      | **GET** | `/taxRates` | List all tax rates | Required | yes |
+      | **PATCH** | `/taxRates/{id}` | Update a tax rate | Required | yes |
+
+  - name: Prices
+    description: |
+      Prices define how much to charge for your products or services. They can be one-time or recurring, and can include various billing intervals and currency options.
+      ## Available Endpoints - Prices
+
+      | **Methods** | **Endpoint** | **Description** | **Auth Required** | **Supports “Try it out”** |
+      | --- | --- | --- | --- | --- |
+      | **POST** | `/prices/{id}` | Create a price for a product | Required | yes |
+      | **GET** | `/prices/{id}` | Retrieve a price by ID | Required | yes |
+      | **GET** | `/prices` | List all prices | Required | yes |
+      | **DELETE** | `/prices/{id}` | Delete a price | Required | yes |
+      | **PATCH** | `/prices/{id}/inactive` | Update an inactive price | Required | yes |
+      | **PATCH** | `/prices/{id}/active` | Update an active price | Required | yes |
+
+  - name: Subscriptions
+    description: |
+      Subscriptions allow you to bill customers on a recurring basis for products or services. You can manage subscription plans, billing cycles, and customer subscriptions.
+      ## Available Endpoints - Subscriptions
+
+      | **Methods** | **Endpoint** | **Description** | **Auth Required** | **Supports “Try it out”** |
+      | --- | --- | --- | --- | --- |
+      | **POST** | `/v1/subscriptions` | Create a subscription | Required | yes |
+      | **GET** | `/v1/subscriptions` | List all subscriptions | Required | yes |
+      | **GET** | `/v1/subscriptions/{id}` | Retrieve a subscription by ID | Required | yes |
+      | **PATCH** | `/v1/subscriptions/{id}` | Update a subscription | Required | yes |
+      | **DELETE** | `/v1/subscriptions/{id}` | Cancel a subscription | Required | yes |
+
 servers: []
 components:
   schemas:

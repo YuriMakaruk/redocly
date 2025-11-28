@@ -1,4 +1,4 @@
-## **1. Introduction**
+# Introduction
 
 Chaching is a modern subscription-billing platform designed to simplify product management, customer lifecycle workflows, and recurring payments.
 It combines a clean dashboard for business users with a powerful API built for developers who need full automation and control.

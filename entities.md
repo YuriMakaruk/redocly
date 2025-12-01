@@ -114,4 +114,3 @@ Include:
 | **Account** | Financial/operational workspace | Banking, billing, Plaid, Stripe, account tokens | No | Multiple Accounts per Company |
 | **User** | Person accessing system | Permissions, roles | — | Operates inside a Company with a selected Account |
 | **Branding** | Tenant visuals | Logo, colors | Yes | Stored in Company |
-| **Billing** | Payment/financial setup | Linked bank accounts, keys | No | Stored per Account |

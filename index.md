@@ -72,3 +72,11 @@ Refer to:
 - Contact Support
 - FAQ
 - GitHub (if relevant)
+
+<!--
+## Tiered Pricing 
+
+Chaching will support multiple tiers, per-unit pricing, and volume discounts.
+
+Expected release: Q1 2026
+-->

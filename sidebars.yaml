@@ -6,6 +6,12 @@
 - group: Getting Started
   items:
     - page: ./onboarding.md
-- group: API
+    - page: ./dashboardOverview.md
+    - page: ./usingChaching.md
+- group: Developer Guide
   items:
     - page: ./api.yaml
+- page: reporting.md
+
+- page: compliance.md
+

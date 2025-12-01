@@ -1,6 +1,8 @@
 
 - page: index.md
   label: Introduction
+- page: entities.md
+  label: Entities
 - group: Getting Started
   items:
     - page: ./onboarding.md

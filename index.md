@@ -40,10 +40,11 @@ A programmable interface allowing developers to:
 
 The dashboard and API are fully connected — changes made in one are instantly reflected in the other.
 
+<!--
 ## Entities
 
 {% partial file="/_partials/entities.md" /%}
-
+-->
 
 ## Release Notes
 

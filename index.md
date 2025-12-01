@@ -16,7 +16,7 @@ Chaching serves two main user groups:
 * **Business / Admin Users** – manage products, pricing, subscriptions, customers, and see payment activity.
 * **Developers** – integrate backend systems with Chaching through REST APIs to automate billing workflows.
 
-**System Overview**
+## System Overview
 
 Chaching includes two primary components:
 
@@ -39,3 +39,36 @@ A programmable interface allowing developers to:
 * Process payments and renewals
 
 The dashboard and API are fully connected — changes made in one are instantly reflected in the other.
+
+## Entities
+
+{% partial file="/_partials/entities.md" /%}
+
+
+## Release Notes
+
+<aside>
+💡 MVP version. Core subscription, product, and customer management are live. Payments integration in progress.
+
+</aside>
+
+<aside>
+💡 Current Limitation:
+Only flat-rate pricing is supported. Tiered, package, and usage-based models will be added in future releases.
+
+</aside>
+<br>
+
+**Supported Pricing Models (MVP)**
+
+- **Flat rate — Supported**
+- **Tiered — Not supported (coming soon)**
+- **Package/bulk — Not supported (coming soon)**
+- **Usage-based/metred — Not supported (coming soon)**
+
+## Need Help?
+Refer to:
+- Documentation
+- Contact Support
+- FAQ
+- GitHub (if relevant)

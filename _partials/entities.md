@@ -1,4 +1,4 @@
-## **Overview**
+### Overview
 
 This section defines the core entities used in Chaching and explains how data is organized across **Companies**, **Accounts**, **Users**. It explains the main building blocks of the Chaching system - the entities you will encounter during onboarding and account setup:
 
@@ -7,7 +7,7 @@ This section defines the core entities used in Chaching and explains how data is
 - **Users** - the people who access and manage your company
 - **Branding** - the shared visual identity applied across your company
 
-## **Company**
+### Company
 
 A **Company** is the highest-level organizational entity in Chaching.
 
@@ -30,7 +30,7 @@ A Company holds information and settings that apply **globally** to all Accounts
 - Companies are **not Accounts**; each Account belongs to exactly one Company.
 - Multi-tenant functionality (e.g., Coca-Cola + Starbucks under one umbrella) is **NOT** *not supported, coming soon*.
 
-## **Accounts**
+### Accounts
 
 An **Account** represents an operational space inside a Company, similar to:
 
@@ -50,7 +50,7 @@ An **Account** represents an operational space inside a Company, similar to:
     - API keys and tokens
 - The **current Account ID** is always encoded in the user’s access token.
 
-## **Users**
+### Users
 
 Users interact with Chaching through a Company while operating under a **current Account**.
 
@@ -68,7 +68,7 @@ Visibility and access to settings depend on:
 - Account-level permissions included in the token
 - Company-wide permissions for global settings
 
-## **Branding**
+### Branding
 
 **Branding is Company-wide**
 
@@ -76,11 +76,11 @@ Visibility and access to settings depend on:
 - Branding does NOT vary between Accounts.
 - Branding stays the same for all Accounts under the company.
 
-## **Settings Model**
+### Settings Model
 
 Chaching uses two categories of settings:
 
-### **Company-Level Settings**
+#### Company-Level Settings
 
 Visible to: Admins / Super Admins
 
@@ -92,7 +92,7 @@ Include:
 
 These settings appear **regardless of selected Account**, because they apply to the entire Company.
 
-### **Account-Level Settings**
+#### Account-Level Settings
 
 Visible only when:
 
@@ -106,7 +106,7 @@ Include:
 - Account-specific billing and financial data
 - Account-specific tokens
 
-## **Entity Summary Table**
+### Entity Summary Table
 
 | Entity | Represents | Stores | Shared Across Accounts? | Notes |
 | --- | --- | --- | --- | --- |

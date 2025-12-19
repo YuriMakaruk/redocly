@@ -1,13 +1,23 @@
 
 - page: index.md
   label: Introduction
-- page: entities.md
-  label: Entities
 - group: Getting Started
   items:
     - page: ./onboarding.md
     - page: ./dashboardOverview.md
-    - page: ./usingChaching.md
+    - page: ./entities.md
+
+- group: Using Chaching
+  items:
+    - group: Customers
+      page: Using Chaching/Customers/customers.md
+      items:
+        - page: Using Chaching/Customers/add-new-customer.md
+        - page: Using Chaching/Customers/update-customer.md
+        - page: Using Chaching/Customers/view-customer-details.md
+        - page: Using Chaching/Customers/add-payment-method.md
+        - page: Using Chaching/Customers/export-customers.md
+
 - group: Developer Guide
   items:
     - page: ./api.yaml

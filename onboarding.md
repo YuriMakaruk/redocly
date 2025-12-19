@@ -35,9 +35,9 @@ Before onboarding into Chaching, the user must create the following:
 | **Email account** | Required to verify your email and receive the verification link for Step 1. |
 | **Stripe account** | Required if you plan to migrate existing subscriptions from Stripe. |
 
-# **Account Creation**
+# Account Creation
 
-## **The Sign-Up Flow**
+## The Sign-Up Flow
 
 1. Navigate to:
     
@@ -63,7 +63,7 @@ Once you click the link, you’ll be securely redirected back to ChaChing Onboar
 
 {% img src="./images/onboard.png" alt="onboard.png" withLightbox=true width="" height="" /%}
 
-# **Onboarding Flow**
+# Onboarding Flow
 
 The complete onboarding flow consists of:
 
@@ -75,7 +75,7 @@ The complete onboarding flow consists of:
 6. **Review**
 7. **Pricing**
 
-## **Step 1: Personal Info**
+## Step 1: Personal Info
 
 After verifying your email, you’ll be asked to provide:
 
@@ -101,7 +101,7 @@ Fill in all required fields and click **Continue**.
 | **Password** | Must meet all requirements: 8 characters, 1 uppercase, 1 number, 1 special character. | **Required** |
 | **Password Confirmation** | Enter the same password again to confirm. Must match the password. | **Required** |
 
-## **Step 2: Branding**
+## Step 2: Branding
 
 In this step, you can personalize the look and feel of your tenant.
 
@@ -125,7 +125,7 @@ Click **Continue** once you’re satisfied with the preview.
 
 Note: the branding can be personalized in the tenant profile settings. For details, refer to 
 
-## **Step 3. Integration Type**
+## Step 3. Integration Type
 
 In this step, you select how your platform currently processes payments. ChaChing supports multiple integration models, so choosing the correct one ensures you receive the correct setup instructions in the next steps.
 
@@ -137,7 +137,7 @@ You will see three options:
 
 After selecting an option, click **Continue** to proceed.
 
-### **Option 1: Replace Hosted Page**
+### Option 1: Replace Hosted Page
 
 If you selected **Hosted Page** or **Both**, you will receive instructions to replace your existing Stripe Checkout link.
 
@@ -149,7 +149,7 @@ You can:
 
 Click **I replaced the link** when complete.
 
-### **Option 2: Replace API Endpoints**
+### Option 2: Replace API Endpoints
 
 If you selected **API Integration**, ChaChing will explain how to replace your Stripe API calls with ChaChing API calls.
 
@@ -161,7 +161,7 @@ You’ll find:
 
 Click **Continue** to proceed.
 
-## **Step 4: Stripe Migration**
+## Step 4: Stripe Migration
 
 If you already have active Stripe customers, ChaChing can import them for you.
 
@@ -172,7 +172,7 @@ If you already have active Stripe customers, ChaChing can import them for you.
 
 If you don't have existing subscriptions, this part of onboarding will be skipped.
 
-### **4.1 Connect Your Stripe Account**
+### 4.1 Connect Your Stripe Account
 
 To import subscriptions, provide your Stripe keys:
 
@@ -183,7 +183,7 @@ Once validated, ChaChing will fetch your subscriptions so you can decide which o
 
 Click **Continue**.
 
-# **Step 5: Subscription Selection**
+# Step 5: Subscription Selection
 
 You will see a table of all subscriptions retrieved from Stripe.
 {% img src="./images/2025-12-09_14-49-59.png" alt="2025-12-09_14-49-59.png" withLightbox=true width="" height="" /%}
@@ -213,7 +213,7 @@ Click **Continue** when ready.
 | **Renewal Date** | The next billing date when the subscription will renew after migration. |
 | **Amount** | Price the customer is currently paying for the subscription. |
 
-## **Step 6: Review Migration Summary**
+## Step 6: Review Migration Summary
 
 In this step, ChaChing calculates your expected monthly savings compared to Stripe.
 
@@ -225,7 +225,7 @@ You’ll see:
 
 Below the savings section, you’ll be asked to connect your bank account.
 
-### **6.1 Connect Your Bank**
+### 6.1 Connect Your Bank
 
 To receive payouts, connect your bank account via Plaid.
 
@@ -237,7 +237,7 @@ When completed successfully, the screen will display:
 
 Сlick **Continue**.
 
-## **7. Review All Changes**
+## 7. Review All Changes
 
 In the final step, you will see a full summary of everything that will be migrated:
 

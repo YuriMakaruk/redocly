@@ -72,8 +72,6 @@ Refer to:
 - Documentation
 - Contact Support
 - FAQ
-- GitHub (if relevant)
-
 <!--
 ## Tiered Pricing 
 

@@ -1,218 +1,253 @@
 # User Registration & Onboarding Guide
 
-This guide walks new customers through the full onboarding process in Chaching - from email verification to Stripe migration and subscription selection.
+The ChaChing onboarding process guides you through setting up your account, configuring your branding, selecting your integration type, importing data from Stripe, and reviewing all changes before completing your migration. Before you begin, it’s helpful to understand what happens once the migration is confirmed, as this ensures a smooth transition and clear expectations.
+
+**What Happens After You Confirm the Migration**
+
+When you complete the onboarding flow and approve the migration, ChaChing automatically handles all required steps behind the scenes:
+
+1. **Your imported Stripe subscriptions will be cancelled in Stripe.**
+    
+    ChaChing takes over billing responsibility while preserving your historical records.
+    
+2. **Subscriptions will be billed on their normal renewal dates.**
+    
+    Any past-due subscriptions will be retried automatically after migration.
+    
+3. **ChaChing will sync all necessary dependencies**, including:
+    - Customers
+    - Tax rates
+    - Product lists
+    - Related metadata
+4. **The sync process may take some time.**
+    
+    During this period, customers can continue creating new subscriptions. ChaChing will monitor your Stripe account and import these automatically. You will receive a notification once the full import and synchronization are complete.
+    
+5. **Your historical Stripe data remains intact.**
+    
+    Nothing is deleted from your Stripe dashboard—your past information stays available for safe keeping and audit purposes.
 
 # Prerequisites
-
-Before onboarding into Chaching, the user must complete the following:
-
-**Required Accounts**
+Before onboarding into Chaching, the user must create the following:
 
 | Prerequisite | Description |
 | --- | --- |
-| **Amazon Web Services account** | Required to verify sender email and receive the verification link used in the first step. For details, refer to Step 1. |
-| **Stripe account** | Required if the user is migrating existing subscriptions from Stripe. |
+| **Email account** | Required to verify your email and receive the verification link for Step 1. |
+| **Stripe account** | Required if you plan to migrate existing subscriptions from Stripe. |
 
 # **Account Creation**
 
-### **Step 1 — Verify Email (AWS SES)**
-
-1. Open the verification email from **Amazon Web Services**.
-2. Click **Verify Email Address**.
-3. You will receive confirmation:
-    
-    *“You have successfully verified an email address. You can now start sending email from this address.”*
-    
-
-# **Starting the Chaching Sign-Up Flow**
-
-### **Step 2 — Open Chaching Sign-Up**
+## **The Sign-Up Flow**
 
 1. Navigate to:
+    
+    [**https://test.chaching.io/sign-up**](https://test.chaching.io/sign-up)
+    
+2. Enter the email address and click **Continue with email**.
 
-[**https://test.chaching.io/sign-up**](https://test.chaching.io/sign-up)
-
-1. Enter the email address you previously verified and click **Continue**.
+{% img src="./images/Sign-Up.png" alt="Sign-Up.png" withLightbox=true width="" height="" /%}
 
 Alternatively, from the sign-in page click **Get Started**.
 
-### **Step 3 — Verify Email for Chaching**
+{% img src="./images/GetStarted.png" alt="GetStarted.png" withLightbox=true width="" height="" /%}
 
-A screen will prompt you to confirm your email.
+You will be prompted to verify your email.
 
-{% img src="./images/confirm.png" alt="confirm.png" withLightbox=true width="" height="" /%}
+{% img src="./images/prompt.png" alt="prompt.png" withLightbox=true width="" height="" /%}
 
-Open the email from Chaching and click **Verify Email**.
+Open the email from Chaching and click Verify Email.
 
-You will then be redirected to:
+{% img src="./images/email.png" alt="email.png" withLightbox=true width="" height="" /%}
 
-[**https://test.chaching.io/onboarding/personal-info**](https://test.chaching.io/onboarding/personal-info)
+Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
 
-# **Onboarding Flow Overview**
+{% img src="./images/onboard.png" alt="onboard.png" withLightbox=true width="" height="" /%}
+
+# **Onboarding Flow**
 
 The complete onboarding flow consists of:
 
 1. **Personal info**
-2. **Add branding**
-3. **Replace current solution**
-4. **Stripe migration**
-5. **Subscription selection**
+2. **Branding**
+3. **Integration Type**
+4. **Stripe Migration**
+5. **Subscription Selection**
 6. **Review**
 7. **Pricing**
 
-# **Step 1: Personal Info**
+## **Step 1: Personal Info**
 
-### 
+After verifying your email, you’ll be asked to provide:
 
-| Section | Fields / Description | Required |
+- Personal details
+- Business address
+- Password
+
+Fill in all required fields and click **Continue**.
+
+**Personal Information — Field Reference**
+
+| **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
-| **Email verification** | Confirms that the user email is verified. | yes |
-| **Your full name** | Text input. | yes |
-| Phone |  | yes |
-| **Company name** | Text input. | yes |
-| **Business address** | Text input. | yes |
-| **Set password** | Enter password + repeat password fields. | yes |
-| Password requirements | - 8 characters long - 1 uppercase letter - 1 number - 1 special character | yes |
+| **Full Name** | Your first and last name used for account identification. | **Required** |
+| **Phone** | Contact phone number. Must be a valid phone format. | **Required** |
+| **Company Name** | The legal or business name of your company. | **Required** |
+| **Country** | Select your country of operation from the dropdown list. | **Required** |
+| **Address Line 1** | Primary business address. Must contain at least 2 characters. | **Required** |
+| **Address Line 2** | Secondary address information, such as suite or unit number. | Optional |
+| **City** | City where your business operates. Must contain at least 2 characters. | **Required** |
+| **State / Region** | State, province, or region. Must contain at least 2 characters. | **Required** |
+| **Zip / Postal Code** | Postal code for your business address. Must be valid for the selected country. | **Required** |
+| **Password** | Must meet all requirements: 8 characters, 1 uppercase, 1 number, 1 special character. | **Required** |
+| **Password Confirmation** | Enter the same password again to confirm. Must match the password. | **Required** |
 
-# **Step 2: Add Branding**
+## **Step 2: Branding**
 
-| Section | Fields / Description | Required |
+In this step, you can personalize the look and feel of your tenant.
+
+**You can:**
+
+- Upload your company logo
+- Choose your primary and accent colors
+- Preview how your branding will look in ChaChing
+
+Click **Continue** once you’re satisfied with the preview.
+
+**Branding – Field Reference**
+
+| **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
-| **Logo upload** | Drag & drop or file picker. 
-Supported: PNG/JPEG, up to 2 MB. | yes |
-| **Brand color** | Primary brand color picker. | yes |
-| **Accent color** | Accent color picker. | yes |
-| **Preview** | Shows branding applied to sample subscription card (e.g., “CC $200/month”). |  |
-| **Payment form** | Cardholder name, card number, expiry, CVC, ZIP, country. |  |
-| **Save changes** | Saves branding info. |  |
+| **Logo** | Upload your company logo. Supports PNG and JPEG formats up to 2 MB. | **Required**  |
+| **Set Default Logo** | Use ChaChing’s default logo if no custom logo is uploaded. | Optional |
+| **Primary Brand Color** | Main color used across your customer-facing pages. Select from color picker. | **Required** |
+| **Accent Color** | Secondary color used for highlights and UI accents. Select from color picker. | **Required** |
+| **Save Changes** | Saves all branding updates and applies them to your tenant preview. | — |
 
-## 
+Note: the branding can be personalized in the tenant profile settings. For details, refer to 
 
-# **Step 3: Replace Current Solution**
+## **Step 3. Integration Type**
 
-Users must choose how they were previously using Stripe:
+In this step, you select how your platform currently processes payments. ChaChing supports multiple integration models, so choosing the correct one ensures you receive the correct setup instructions in the next steps.
 
-### **Integration Type Options**
+You will see three options:
 
-1. **Hosted page** (Stripe Checkout or similar)
-2. **API solution** (custom Stripe API integration)
-3. **Both**
+- **Hosted Page** – if you use Stripe Checkout or similar hosted payment pages.
+- **API Solution** – if your system directly integrates with Stripe’s Billing APIs.
+- **Both** – if you use both hosted checkout and direct API calls.
 
-The selected option determines the next steps.
+After selecting an option, click **Continue** to proceed.
 
-## **Option 1: Replace Hosted Page**
+### **Option 1: Replace Hosted Page**
 
-The page displays:
+If you selected **Hosted Page** or **Both**, you will receive instructions to replace your existing Stripe Checkout link.
 
-| Item | Description |
-| --- | --- |
-| **Hosted page** | Preview your current Stripe-hosted payment link. |
-| **Embedded solution** | Provides the Chaching embedded payment link. |
-| **Copy link** | Copy the link:
-[https://test.chaching.io/process-payment/{token}](https://test.chaching.io/process-payment/%7Btoken%7D)
-Note: {token} should be replaced with the actual payment token. |
-| **External page** | Provides the link for external page usage. |
-| **I replaced the link**  | Confirmation to move to the next step. |
+You can:
 
-## **Option 2: Replace API Endpoints**
+- Copy your new ChaChing Checkout link
+- Use the embedded version or the external hosted page
+- Confirm all previous Stripe URLs have been replaced
 
-The user is instructed to:
+Click **I replaced the link** when complete.
 
-1. Go to **Chaching documentation**.
-2. Replace all Stripe billing and invoicing endpoints with Chaching’s equivalents.
-    
-    (Chaching mimics Stripe’s API structure.)
-    
-3. Return to onboarding once complete.
+### **Option 2: Replace API Endpoints**
 
-The button **Continue** moves to migration step.
+If you selected **API Integration**, ChaChing will explain how to replace your Stripe API calls with ChaChing API calls.
 
-# **Step 4: Stripe Migration**
+You’ll find:
 
-### **Migration Options**
+- A link to the API documentation
+- A mapping overview showing that ChaChing uses a Stripe-compatible format
+- A confirmation step to proceed once you’ve updated your integration
 
-1. Users choose one of the options and clicks **Continue**:
+Click **Continue** to proceed.
+
+## **Step 4: Stripe Migration**
+
+If you already have active Stripe customers, ChaChing can import them for you.
+
+Сhoose between:
+
 - **Migrate from Stripe**
-- **I do not have existing subscriptions**
-1. Learn how the import works and then click **I understand**
+- **I don’t have existing subscriptions**
 
-## **Import existing data from Stripe**
+If you don't have existing subscriptions, this part of onboarding will be skipped.
 
-Chaching import flow:
+### **4.1 Connect Your Stripe Account**
 
-1. Provide Stripe public and secret keys and click **Continue**.
-2. Chaching imports subscription data (customers, products, taxes).
-3. The user selects which subscriptions to migrate.
-4. Selected subscriptions are deleted from Stripe.
-5. New billing becomes active from the next billing cycle.
+To import subscriptions, provide your Stripe keys:
 
-User must click **I understand** to proceed.
+- Stripe Secret Key
+- Stripe Public Key
 
-## **Import Existing Data**
+Once validated, ChaChing will fetch your subscriptions so you can decide which ones to migrate.
 
-Steps shown:
-
-1. Navigate to Stripe Dashboard.
-2. Reveal and copy the public + secret keys.
-3. Paste them into the Chaching form.
-
-**Note:**
-
-Stripe keys are used **only for one-time import** and never stored.
-
-After this step, the developer mentioned the process will contain:
-
-- **Customer synchronization**
-- **Subscription selection**
-- **Subscription synchronization**
-
-This section will also feature a **progress bar**.
+Click **Continue**.
 
 # **Step 5: Subscription Selection**
 
-*(Available once developer completes the workflow)*
+You will see a table of all subscriptions retrieved from Stripe.
+{% img src="./images/2025-12-09_14-49-59.png" alt="2025-12-09_14-49-59.png" withLightbox=true width="" height="" /%}
 
-The user will:
+Here you can:
 
-- See imported subscriptions
-- Select which subscriptions to enable
-- Assign plans or products if required
-- Confirm mappings before migration
+- Select all subscriptions
+- Select only active subscriptions
+- Select first 100
+- Select individually
+- Review amounts, dates, customer names, emails, and billing cycles
 
-A progress indicator will show import status.
+A summary panel shows how many subscriptions you’ve selected and their total monthly value.
 
-# **Step 6: Review**
+Click **Continue** when ready.
 
-*(You have not reached this step yet — placeholder)*
+**Select Subscriptions – Field Reference**
 
-The Review page will include:
+| **Name** | **Description** |
+| --- | --- |
+| **Subscription ID** | Unique identifier of the subscription imported from Stripe. Used to map and migrate subscription records into ChaChing. |
+| **Status** | Current subscription state (e.g., active, trialing, past_due). Helps determine which subscriptions are eligible for migration. |
+| **Customer Name** | Full name of the customer associated with the subscription. |
+| **Customer Email** | Email address of the customer. Used for billing communication and subscription mapping. |
+| **Start Date** | The date when the subscription originally started in Stripe. |
+| **Frequency** | Billing frequency (e.g., monthly, yearly). |
+| **Renewal Date** | The next billing date when the subscription will renew after migration. |
+| **Amount** | Price the customer is currently paying for the subscription. |
 
-- Personal info summary
-- Branding summary
-- Integration selection
-- Stripe migration summary
-- Subscription choices
+## **Step 6: Review Migration Summary**
 
-The user will confirm all details before continuing to Pricing.
+In this step, ChaChing calculates your expected monthly savings compared to Stripe.
 
-# **Step 7: Pricing**
+{% img src="./images/2025-12-09_14-53-34.png" alt="2025-12-09_14-53-34.png" withLightbox=true width="" height="" /%}
+You’ll see:
 
-*(Placeholder — not reached)*
+- A comparison of Stripe’s 0.7% fee vs ChaChing’s 0.35% fee
+- An estimated monthly savings amount based on the subscriptions you imported
 
-This page will likely include:
+Below the savings section, you’ll be asked to connect your bank account.
 
-- Selected plan
-- Cost breakdown
-- Billing interval
-- Payment method
-- Final confirmation
+### **6.1 Connect Your Bank**
 
-# **Completion**
+To receive payouts, connect your bank account via Plaid.
 
-After submitting the Pricing page, the account is fully onboarded and can begin using:
+When completed successfully, the screen will display:
 
-- Chaching Payment Links
-- Subscriptions
-- API endpoints
-- Branding configuration
-- Dashboard tools
+- Bank name
+- Masked account number
+- A confirmation badge
+
+Сlick **Continue**.
+
+## **7. Review All Changes**
+
+In the final step, you will see a full summary of everything that will be migrated:
+
+- Number of subscriptions
+- Number of customers
+- Number of products
+- Sales tax details
+- Total subscription value
+- Amount saved per month after moving from Stripe to ChaChing based on current subscription fees.
+
+Review all information carefully.
+
+Once you a**ccept and continue**, your tenant will be activated and you will be redirected to your ChaChing dashboard.

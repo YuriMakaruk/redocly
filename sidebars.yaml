@@ -1,10 +1,8 @@
 
 - page: index.md
   label: Introduction
-- group: Business Documentation
-  items:
-  - page: entities.md
-    label: Entities
+- page: entities.md
+  label: Entities
 - group: Getting Started
   items:
     - page: ./onboarding.md
@@ -15,5 +13,4 @@
     - page: ./api.yaml
 - page: reporting.md
 
-- page: compliance.md
 

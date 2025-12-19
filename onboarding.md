@@ -183,7 +183,7 @@ Once validated, ChaChing will fetch your subscriptions so you can decide which o
 
 Click **Continue**.
 
-# Step 5: Subscription Selection
+## Step 5: Subscription Selection
 
 You will see a table of all subscriptions retrieved from Stripe.
 {% img src="./images/2025-12-09_14-49-59.png" alt="2025-12-09_14-49-59.png" withLightbox=true width="" height="" /%}

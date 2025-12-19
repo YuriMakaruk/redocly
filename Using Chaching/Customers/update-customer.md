@@ -13,7 +13,7 @@ This opens the full customer-editing form.
 
 The **Edit Customer** page allows business users to update customer profile information, billing data, and shipping details.
 
-## **Customer Details**
+## Customer Details
 
 | **Field / Element** | **Description** |
 | --- | --- |
@@ -21,7 +21,7 @@ The **Edit Customer** page allows business users to update customer profile info
 | **Email** | Primary customer email used for receipts, login, and notifications. |
 | **Show advanced option** | Expands the form to include Billing and Shipping details. |
 
-## **Billing Details**
+## Billing Details
 
 | **Field / Element** | **Description** |
 | --- | --- |
@@ -34,7 +34,7 @@ The **Edit Customer** page allows business users to update customer profile info
 | **State** | Billing state or region. |
 | **Zip** | Postal/ZIP code. |
 
-## **Shipping Details**
+## Shipping Details
 
 | **Field / Element** | **Description** | **Required / Optional** |
 | --- | --- | --- |
@@ -46,6 +46,6 @@ The **Edit Customer** page allows business users to update customer profile info
 | **State** | Shipping state or region. | Optional |
 | **Zip** | Postal/ZIP code. | Optional |
 
-## **Update customer button**
+## Update customer button
 
 Saves all updated customer information.

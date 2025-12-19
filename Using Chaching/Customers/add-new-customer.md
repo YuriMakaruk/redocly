@@ -5,7 +5,7 @@ Use this workflow to manually create a customer record in ChaChing. This is usef
 **Click *Add new customer* to create the customer**.
 {% img src="./images/image 1.png" alt="image 1.png" withLightbox=true width="" height="" /%}
 
-## **Customer Details**
+## Customer Details
 
 | **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Use this workflow to manually create a customer record in ChaChing. This is usef
 | **Email** | Primary customer email used for receipts, invoices, and all system notifications. | Required |
 | **Show advanced options** | Expands the form to include billing and shipping sections. | — |
 
-## **Billing Details**
+## Billing Details
 
 | **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ Use this workflow to manually create a customer record in ChaChing. This is usef
 | **State** | Billing state, province, or region. | Optional |
 | **Zip** | Billing ZIP or postal code. | Optional |
 
-## **Shipping Details**
+## Shipping Details
 
 | **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ Use this workflow to manually create a customer record in ChaChing. This is usef
 | **State** | Shipping state, province, or region. | Optional |
 | **Zip** | Shipping ZIP or postal code. | Optional |
 
-### **Complete the Action**
+### Complete the Action
 
 **Click *Add customer* to create the customer** using the provided details.
 

@@ -1,4 +1,4 @@
-## Dashboard Overview
+# Dashboard Overview
 
 After the tenant activation, you will be automatically redirected to your **ChaChing Dashboard**. This is your main control center where you may want to:
 
@@ -8,16 +8,16 @@ After the tenant activation, you will be automatically redirected to your **ChaC
 - Create a **subscription**, **invoice**, or **payment**
 - Visit **Settings** to issue API keys or adjust branding
 
-## **Dashboard Layout Overview**
+# Dashboard Layout Overview
 
 The dashboard opens on the **Home** section. The interface includes a left-hand navigation panel, a top action bar, and a set of real-time metrics that summarize your business performance.
 {% img src="./images/home.png" alt="home.png" withLightbox=true width="" height="" /%}
 
-# **Left Navigation Menu**
+# Left Navigation Menu
 
 The left sidebar helps you quickly access every part of your tenant:
 
-### **Main Sections**
+## Main Sections
 
 - **Home**
     
@@ -48,7 +48,7 @@ The left sidebar helps you quickly access every part of your tenant:
     Re-run or manage your Stripe migration if needed.
     
 
-### **Manage**
+## Manage
 
 - **Settings**
     
@@ -59,18 +59,18 @@ The left sidebar helps you quickly access every part of your tenant:
     Manage team members and access permissions. For details, refer to 
     
 
-### **Account**
+## Account
 
 - **Sign Out**
     
     Safely log out of your tenant.
     
 
-# **Home Dashboard Overview**
+# Home Dashboard Overview
 
 The **Home** section is designed to give you an immediate, at-a-glance understanding of your business performance.
 
-### **Header Controls**
+## Header Controls
 
 - **Toggle Sidebar** – Show or hide the navigation panel.
 - **Create** – A quick-action menu including:
@@ -89,13 +89,13 @@ The **Home** section is designed to give you an immediate, at-a-glance understan
     - All time
     
 
-# **Overview Metrics**
+# Overview Metrics
 
-### **Monthly Recurring Revenue (MRR)**
+## Monthly Recurring Revenue (MRR)
 
 Shows your current MRR and 30-day growth.
 
-# **Subscription Metrics**
+# Subscription Metrics
 
 Shows subscription activity within the selected time period, including:
 
@@ -107,7 +107,7 @@ Shows subscription activity within the selected time period, including:
 
 These sections help you quickly understand changes in your subscriber base.
 
-# **Charts & Financial Performance**
+# Charts & Financial Performance
 
 **Your charts** section visualizes billing activity for the selected date range.
 

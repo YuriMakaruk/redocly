@@ -4,7 +4,7 @@ ChaChing allows you to export customer records for reporting, analytics, or back
 
 When you click **Export** on the Customers page, the export window includes the following options:
 
-## **Date Range**
+## Date Range
 
 Select the time period for the customer data you want to export.
 
@@ -17,7 +17,7 @@ Select the time period for the customer data you want to export.
 | **All** | Includes all customers in the workspace, regardless of creation date. |
 | **Custom** | Allows selecting a specific start and end date. |
 
-## **Columns**
+## Columns
 
 Choose which fields to include in the export file.
 
@@ -26,7 +26,7 @@ Choose which fields to include in the export file.
 | **All** | Exports all available customer fields. |
 | **Custom** | Allows selecting specific columns to include (e.g., names, emails, payment methods, total spend). |
 
-## **Format**
+## Format
 
 Select the file format for your export.
 
@@ -35,6 +35,6 @@ Select the file format for your export.
 | **CSV** | Comma-separated values. Ideal for spreadsheets, imports, and data tools. |
 | **XLSX** | Excel format. Preserves formatting and supports larger data operations. |
 
-### **Complete the Action**
+### Complete the Action
 
 Click **Export** to download the customer file with the selected filters and preferences.

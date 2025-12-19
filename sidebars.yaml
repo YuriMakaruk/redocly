@@ -17,6 +17,27 @@
         - page: Using Chaching/Customers/view-customer-details.md
         - page: Using Chaching/Customers/add-payment-method.md
         - page: Using Chaching/Customers/export-customers.md
+    - group: Subscriptions
+      page: Using Chaching/Subscriptions/Subscriptions.md
+      items:
+        - page: Using Chaching/Subscriptions/View subscription details.md
+    - group: Invoices
+      page: Using Chaching/Invoices/Invoices.md
+      items:
+        - page: Using Chaching/Invoices/Invoices.md
+    - group: Transactions
+      page: Using Chaching/Transactions/Transactions.md
+      items:
+        - page: Using Chaching/Transactions/Transactions.md
+    - group: Products
+      page: Using Chaching/Products/Products.md
+      items:
+        - page: Using Chaching/Products/Products.md
+    - page: Using Chaching/Create a Payment/CreatePayment.md
+    - page: Using Chaching/Create an Invoice/CreateInvoice.md
+    - page: Using Chaching/Create a Subscription/CreateSubscription.md
+
+
 
 - group: Developer Guide
   items:

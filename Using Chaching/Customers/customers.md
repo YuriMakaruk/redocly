@@ -1,7 +1,7 @@
 ## Customers
 When you click **Customers** in the left navigation panel, you are taken to the **Customers** page. This section provides a complete view of all customers in your tenant, their billing information, subscription status, and historical payments.
 {% img src="./images/customers.png" alt="customers.png" withLightbox=true width="" height="" /%}
-### **Filter Tabs**
+### Filter Tabs
 
 You can filter the list of customers using the following tabs:
 
@@ -12,7 +12,7 @@ You can filter the list of customers using the following tabs:
 | **First time customer** | Shows customers who have made only one purchase or subscription. |
 | **Repeat customer** | Shows customers with multiple purchases or renewals. |
 
-## **Active Subscriptions Filter**
+## Active Subscriptions Filter
 
 Below the tabs, you will see an additional filter:
 
@@ -27,7 +27,7 @@ Below the tabs, you will see an additional filter:
 
 This filter is useful if you want to identify customers who currently do not have an active subscription.
 
-## **Action Buttons**
+## Action Buttons
 
 | **Button** | **Description** |
 | --- | --- |
@@ -35,7 +35,7 @@ This filter is useful if you want to identify customers who currently do not hav
 | **Export** | Exports the customer list. When checkboxes are selected, export applies only to those selected customers. |
 | **Sync customers** | Fetches the latest customer data from Stripe and updates your tenant accordingly. |
 
-## **Customer Table**
+## Customer Table
 
 The main part of the page contains a table listing all customers.
 
@@ -48,7 +48,7 @@ The main part of the page contains a table listing all customers.
 | **Payments** | The number of payments associated with the customer. |
 | **Current subscription** | Shows the customer’s active subscription status, if any. |
 
-## **Row Actions**
+## Row Actions
 
 When you hover over a customer row, a **View details** option appears.
 

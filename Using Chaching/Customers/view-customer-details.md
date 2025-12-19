@@ -1,10 +1,10 @@
 # View Customer Details
 
-# **Customer Details View**
+# Customer Details View
 
 When you select **View details** on a customer row, you are taken to the **Customer Details** page. This page displays all available information about the selected customer, including subscriptions, payments, payment methods, invoices, and profile details.
 
-## **Header Actions**
+## Header Actions
 
 | **Element** | **Description** |
 | --- | --- |
@@ -13,7 +13,7 @@ When you select **View details** on a customer row, you are taken to the **Custo
 | **Edit customer** | Opens the customer editor where you can update contact, billing, or shipping details. |
 | **Email** | The customer’s primary email address. |
 
-## **Details**
+## Details
 
 Displays core metadata for the customer.
 
@@ -21,15 +21,15 @@ Displays core metadata for the customer.
 | --- | --- | --- |
 | **Customer ID** | `cus_3b9273da31c01bed2987cc7a` | Unique ID assigned to the customer. |
 | **Customer since** | `12-03-2025` | Date when the customer was created. |
-| **Billing email** | `makarukyuri@gmail.com` | Email used for billing communication. |
-| **Billing details** | `kjhk, +38010663795388` | Address and phone number entered during customer creation. |
-| **Shipping details** | `kjhk, +38010663795388` | Shipping address and phone number. |
+| **Billing email** | `email@gmail.com` | Email used for billing communication. |
+| **Billing details** | `2399 Michael Islands Apt. 996, +38010663795388` | Address and phone number entered during customer creation. |
+| **Shipping details** | `2399 Michael Islands Apt. 996, +38010663795388` | Shipping address and phone number. |
 
-## **Spending Trend**
+## Spending Trend
 
 Shows the historical graphs once payments exist.
 
-## **Subscriptions**
+## Subscriptions
 
 Displays all subscriptions associated with this customer.
 
@@ -44,7 +44,7 @@ Displays all subscriptions associated with this customer.
 | **Renewal** | Next scheduled billing date. |
 | Menu | Click to be redirected to subscription and customer details |
 
-## **Payments**
+## Payments
 
 Shows all payments made by the customer.
 
@@ -55,7 +55,7 @@ Shows all payments made by the customer.
 | **Payment method** | Card or bank account used for payment. |
 | **Date** | When the payment occurred. |
 
-## **Payment Method**
+## Payment Method
 {% img src="./images/image 4.png" alt="image 4.png" withLightbox=true width="" height="" /%}
 
 
@@ -68,7 +68,7 @@ Note: This option is available if at least two cards have been added |
 | Payment method menu | Delete payment method
 Note: This option is available if at least two cards have been added |
 
-## **Invoices**
+## Invoices
 
 Shows all invoices issued for the customer.
 

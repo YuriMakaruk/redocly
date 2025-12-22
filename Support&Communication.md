@@ -1,8 +1,8 @@
-# **Support & Communication**
+# Support & Communication
 
 This section explains how to get help, find answers, and communicate with the ChaChing team.
 
-## **Documentation**
+## Documentation
 
 The ChaChing documentation is the primary source of guidance for both business users and developers.
 
@@ -16,7 +16,7 @@ Use the documentation to:
 Documentation is continuously updated as new features are released.
 
 
-## **Contact Support (Email)**
+## Contact Support (Email)
 
 If you need direct assistance or encounter an issue that cannot be resolved through documentation, you can contact the ChaChing support team via email.
 
@@ -40,9 +40,9 @@ Use email support for:
 This helps the support team investigate and respond faster.
 
 
-## **Frequently Asked Questions (FAQ)**
+## Frequently Asked Questions (FAQ)
 
-### **Getting Started & Onboarding**
+### Getting Started & Onboarding
 
 **What happens to my existing Stripe subscriptions after migration?**
 After migration is confirmed, ChaChing takes over billing while preserving all historical Stripe data. Subscriptions continue billing on their normal renewal dates.
@@ -55,7 +55,7 @@ Migration time depends on the number of subscriptions and related data. During m
 
 
 
-### **Customers**
+### Customers
 
 **Can I add customers manually?**
 Yes. You can create customers directly from the Customers section and optionally add billing and shipping details.
@@ -71,7 +71,7 @@ Yes. Customers can be exported in CSV or XLSX format with configurable date rang
 
 
 
-### **Products & Pricing**
+### Products & Pricing
 
 **What pricing models are supported?**
 Currently, ChaChing supports flat-rate pricing for recurring and one-off products. Additional pricing models will be introduced in future releases.
@@ -84,7 +84,7 @@ Yes. You can choose whether tax is included or calculated separately when creati
 
 
 
-### **Subscriptions**
+### Subscriptions
 
 **What subscription statuses are available?**
 Subscriptions can be active, trialing, scheduled, paused, cancelled, expired, or past due, depending on billing and payment state.
@@ -97,7 +97,7 @@ Yes. You can modify subscription pricing or products depending on your current s
 
 
 
-### **Payments**
+### Payments
 
 **How are payments processed in ChaChing?**
 Payments are processed using the customer’s default payment method or manually entered card details, depending on the workflow.
@@ -109,7 +109,7 @@ Failed payments follow the retry rules configured in **Invoices & Subscriptions 
 Yes. You can create one-time payments or charge open invoices directly from the dashboard.
 
 
-### **Invoices**
+### Invoices
 
 **What invoice statuses are supported?**
 Invoices can be draft, open, paid, void, or uncollectible, depending on payment and retry outcomes.
@@ -121,7 +121,7 @@ Yes. Invoices can be emailed directly to customers, including a hosted payment p
 Yes. Customers can pay invoices using a secure hosted payment page.
 
 
-### **Transactions & Reporting**
+### Transactions & Reporting
 
 **Where can I view transaction history?**
 All transactions are available in the **Transactions** section, with filters for status, customer, date, and amount.
@@ -130,7 +130,7 @@ All transactions are available in the **Transactions** section, with filters for
 Yes. Both transactions and invoices can be exported in CSV or XLSX format.
 
 
-### **Users & Access Management**
+### Users & Access Management
 
 **Can I invite team members to my account?**
 Yes. Owners and admins can invite users and assign roles with specific permissions.
@@ -140,7 +140,7 @@ ChaChing supports Owner, Admin, Developer, and Support Agent roles, each with pr
 
 
 
-### **Security & Accounts**
+### Security & Accounts
 
 **Is my payment data stored in ChaChing?**
 ChaChing does not store raw card details. Payment information is securely handled by connected payment providers.
@@ -150,7 +150,7 @@ Yes. Both can be updated from the **Personal Details** section in Settings.
 
 
 
-### **API & Developer Questions**
+### API & Developer Questions
 
 **Does ChaChing provide a REST API?**
 Yes. ChaChing provides a REST API for managing customers, subscriptions, invoices, and payments.

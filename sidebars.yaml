@@ -53,3 +53,8 @@
     - page: ./settings/PlansandBilling.md
     - page: ./settings/MerchantAccount.md
     - page: ./settings/DeveloperSettings.md
+
+- group: Users
+  page: ./Users/Users.md
+  items:
+    - page: ./Users/RolePermissionsMatrix.md

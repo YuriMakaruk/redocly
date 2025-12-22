@@ -2,11 +2,11 @@
 
 The **Invoices & Subscriptions** settings page allows administrators to configure how failed payments are handled for subscriptions and invoices, as well as customize default content shown on invoice payment pages.
 
-## **Manage Failed Payments**
+## Manage Failed Payments
 
 This section defines automated retry behavior and actions taken when payments fail.
 
-### **Payment Retry Schedule**
+### Payment Retry Schedule
 
 You can configure multiple retry attempts for failed payments. Each retry is scheduled relative to the previous attempt.
 
@@ -22,7 +22,7 @@ You can configure multiple retry attempts for failed payments. Each retry is sch
 - Retry **7 days** after previous attempt
 - Retry 10 **days** after previous attempt
 
-### **Managing Retry Attempts**
+### Managing Retry Attempts
 
 | **Action** | **Description** |
 | --- | --- |
@@ -31,11 +31,11 @@ You can configure multiple retry attempts for failed payments. Each retry is sch
 
 Retries are executed sequentially in the order shown.
 
-## **Actions After All Retries Fail**
+## Actions After All Retries Fail
 
 These settings determine what happens after all configured retry attempts have been exhausted.
 
-### **Subscription Payment Failure**
+### Subscription Payment Failure
 
 If all retries for a **subscription payment** fail, one of the following actions can be selected:
 
@@ -45,7 +45,7 @@ If all retries for a **subscription payment** fail, one of the following actions
 | **Mark the subscription as unpaid** | Keeps the subscription active but flags it as unpaid. |
 | **Leave the subscription past due** | Keeps the subscription in a past-due state until manual resolution. |
 
-### **Invoice Payment Failure**
+### Invoice Payment Failure
 
 If all retries for an **invoice payment** fail, one of the following actions can be selected:
 
@@ -54,7 +54,7 @@ If all retries for an **invoice payment** fail, one of the following actions can
 | **Mark the invoice as uncollectible** | Flags the invoice as uncollectible and stops further attempts. |
 | **Leave the invoice past due** | Leaves the invoice open and past due for manual follow-up. |
 
-## **Invoice Payment Page Content**
+## Invoice Payment Page Content
 
 This section allows customization of default text shown on invoice payment pages.
 
@@ -65,13 +65,13 @@ This section allows customization of default text shown on invoice payment pages
 
 These values can typically be overridden on individual invoices.
 
-## **Actions**
+## Actions
 
 | **Action** | **Description** |
 | --- | --- |
 | **Save changes** | Applies all updates to retry rules and invoice content settings. |
 
-## **Notes**
+## Notes
 
 - Retry schedules apply to both subscription and invoice payments unless otherwise specified.
 - Changes affect future payment attempts only.

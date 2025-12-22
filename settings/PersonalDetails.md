@@ -2,18 +2,18 @@
 
 The **Personal Details** page allows you to manage your individual account information, security settings, and active login sessions.
 
-## **Profile Details**
+## Profile Details
 
 This section displays your core account information and provides options to update it.
 
-### **Available Actions**
+### Available Actions
 
 - **Edit** – Opens the profile edit form
 - **Delete** – Permanently deletes your user account
 
 ⚠️ **Note:** Deleting your account may affect access to the workspace, depending on your role.
 
-### **Profile Information**
+### Profile Information
 
 | **Field** | **Description** |
 | --- | --- |
@@ -22,7 +22,7 @@ This section displays your core account information and provides options to upda
 | **Password** | Hidden for security. Can be changed via the edit flow. |
 | **Language** | Your preferred interface language. |
 
-### **Edit Profile**
+### Edit Profile
 
 When you click **Edit**, you can:
 
@@ -31,7 +31,7 @@ When you click **Edit**, you can:
 
 Changes take effect immediately after saving.
 
-### **Language Settings**
+### Language Settings
 
 The **Language** field controls the UI language for your ChaChing dashboard.
 
@@ -41,11 +41,11 @@ The **Language** field controls the UI language for your ChaChing dashboard.
 
 You can change the language at any time without affecting other users in the workspace (coming soon).
 
-## **Login Sessions**
+## Login Sessions
 
 This section shows your recent and active login sessions for security visibility.
 
-### **Session Details Displayed**
+### Session Details Displayed
 
 Each session entry includes:
 
@@ -56,7 +56,7 @@ Each session entry includes:
 | **Browser & OS** | Browser and operating system used (e.g., Chrome – Windows). |
 | **IP Address** | IP address associated with the session. |
 
-### **Why This Matters**
+### Why This Matters
 
 Reviewing login sessions helps you:
 

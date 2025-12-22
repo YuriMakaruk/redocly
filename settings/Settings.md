@@ -4,9 +4,9 @@ The **Settings** section allows you to manage your company information, account 
 
 The options displayed on the Settings page depend on the role assigned to the user.
 
-## **Company Settings**
+## Company Settings
 
-### **Personal Details**
+### Personal Details
 
 Use this section to manage your personal account information.
 
@@ -16,7 +16,7 @@ Use this section to manage your personal account information.
 - Change your password
 - Manage communication preferences
 
-### **Company and Branding**
+### Company and Branding
 
 This section controls how your company appears across ChaChing’s customer-facing pages.
 
@@ -26,9 +26,9 @@ This section controls how your company appears across ChaChing’s customer-faci
 - Upload or change your company logo
 - Configure brand colors used in checkout and invoices
 
-## **Account Settings**
+## Account Settings
 
-### **Invoices & Subscriptions**
+### Invoices & Subscriptions
 
 Manage billing records and subscription-related information.
 
@@ -38,7 +38,7 @@ Manage billing records and subscription-related information.
 - Download invoices
 - Track subscription usage and status
 
-### **Plans and Billing**
+### Plans and Billing
 
 This section manages your ChaChing subscription plan and payment setup.
 
@@ -48,7 +48,7 @@ This section manages your ChaChing subscription plan and payment setup.
 - Upgrade or change your plan
 - Manage payment methods used for ChaChing fees
 
-### **Merchant Account**
+### Merchant Account
 
 Configure payment processor and payout settings.
 
@@ -58,7 +58,7 @@ Configure payment processor and payout settings.
 - Manage payment processor credentials
 - Control payout-related settings
 
-### **Developer**
+### Developer
 
 This section is intended for technical users integrating ChaChing into their systems.
 
@@ -68,9 +68,9 @@ This section is intended for technical users integrating ChaChing into their sys
 - Configure webhooks
 - Access developer-related tools and settings
 
-## **Workspace Management**
+## Workspace Management
 
-### **Delete Workspace**
+### Delete Workspace
 
 At the bottom of the Settings page, you can permanently remove your workspace.
 

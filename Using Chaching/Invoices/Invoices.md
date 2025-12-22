@@ -69,7 +69,7 @@ An **Apply** button narrows down the invoices list.
 
 ## Export Options
 
-Exports the invoices list. When filters are applied, exports only selected invoices. For details, refer to 
+Exports the invoices list. When filters are applied, exports only selected invoices.  
 
 | **Format** | **Description** |
 | --- | --- |
@@ -89,4 +89,4 @@ Displays the list of all invoices matching the applied filters.
 | **Email** | Customer's billing or primary email address. |
 | **Created** | Date when the invoice was generated. |
 | **Due** | Date the invoice must be paid (or “—” if already paid). |
-| **View Details** | Link that opens the full Invoice Details page. For details, refer to  |
+| **View Details** | Link that opens the full Invoice Details page. For details, refer to [View invoices details](./View%20invoices%20details.md) |

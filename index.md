@@ -69,9 +69,10 @@ Only flat-rate pricing is supported. Tiered, package, and usage-based models wil
 
 ## Need Help?
 Refer to:
-- Documentation
-- Contact Support
-- FAQ
+- [Documentation](./index.md)
+- [Contact Support](./Support&Communication.md)
+- [FAQ](./Support&Communication.md)
+
 <!--
 ## Tiered Pricing 
 

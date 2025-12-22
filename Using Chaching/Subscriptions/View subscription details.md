@@ -13,7 +13,7 @@ At the top of the page, the subscription name and status are displayed, along wi
 | **Element** | **Description** |
 | --- | --- |
 | **Subscription Name** | Combines customer name and current subscription state (e.g., *active*). |
-| **Edit** | Allows editing subscription settings and billing details. For details, refer to  |
+| **Edit** | Allows editing subscription settings and billing details.  |
 | **Pause** | Temporarily pauses the subscription.  |
 | **Cancel** | Cancels the subscription going forward. |
 
@@ -71,4 +71,4 @@ All past invoices generated for this subscription are shown here.
 | **Frequency** | Billing interval for the subscription (e.g., *month*, *year*). |
 | **Created** | Date the invoice was generated. |
 | **Due** | Date the invoice is due (`—` for already paid invoices). |
-| **Action** | Provides a **View details** link to open the full invoice record. **For details, refer to** |
+| **Action** | Provides a **View details** link to open the full invoice record. |

@@ -56,7 +56,7 @@ The left sidebar helps you quickly access every part of your tenant:
     
 - **Users**
     
-    Manage team members and access permissions. For details, refer to 
+    Manage team members and access permissions. For details, refer to [Users](./Users/Users.md)
     
 
 ## Account

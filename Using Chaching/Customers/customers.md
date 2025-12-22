@@ -60,4 +60,4 @@ Clicking it opens the detailed customer profile where you can review:
 - Subscription(s)
 - Transactions history
 
-For details on the detailed customer profile, refer to the section Update customer info
+For details on the detailed customer profile, refer to the section [Update Customers](./update-customer.md).

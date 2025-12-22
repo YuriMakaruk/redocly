@@ -45,7 +45,7 @@ When the user clicks **Transactions** in the left navigation panel, the system d
 
 ## Export Options
 
-Exports the transactions list. When filters are applied, exports only selected transactions . For details, refer to 
+Exports the transactions list. When filters are applied, exports only selected transactions. 
 
 | **Format** | **Description** |
 | --- | --- |

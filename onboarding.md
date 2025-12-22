@@ -123,7 +123,7 @@ Click **Continue** once you’re satisfied with the preview.
 | **Accent Color** | Secondary color used for highlights and UI accents. Select from color picker. | **Required** |
 | **Save Changes** | Saves all branding updates and applies them to your tenant preview. | — |
 
-Note: the branding can be personalized in the tenant profile settings. For details, refer to 
+Note: the branding can be personalized in the tenant profile settings. For details, refer to [Company and Branding](./settings/CompanyandBranding.md)
 
 ## Step 3. Integration Type
 

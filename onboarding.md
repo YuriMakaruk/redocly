@@ -94,7 +94,7 @@ Fill in all required fields and click **Continue**.
 | **Company Name** | The legal or business name of your company. | **Required** |
 | **Country** | Select your country of operation from the dropdown list. | **Required** |
 | **Address Line 1** | Primary business address. Must contain at least 2 characters. | **Required** |
-| **Address Line 2** | Secondary address information, such as suite or unit number. | Optional |
+| **Address Line 2** | Secondary address information, such as suite or unit number. | **Optional** |
 | **City** | City where your business operates. Must contain at least 2 characters. | **Required** |
 | **State / Region** | State, province, or region. Must contain at least 2 characters. | **Required** |
 | **Zip / Postal Code** | Postal code for your business address. Must be valid for the selected country. | **Required** |
@@ -118,7 +118,7 @@ Click **Continue** once you’re satisfied with the preview.
 | **Name** | **Description** | **Required / Optional** |
 | --- | --- | --- |
 | **Logo** | Upload your company logo. Supports PNG and JPEG formats up to 2 MB. | **Required**  |
-| **Set Default Logo** | Use ChaChing’s default logo if no custom logo is uploaded. | Optional |
+| **Set Default Logo** | Use ChaChing’s default logo if no custom logo is uploaded. | **Optional** |
 | **Primary Brand Color** | Main color used across your customer-facing pages. Select from color picker. | **Required** |
 | **Accent Color** | Secondary color used for highlights and UI accents. Select from color picker. | **Required** |
 | **Save Changes** | Saves all branding updates and applies them to your tenant preview. | — |

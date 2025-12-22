@@ -43,5 +43,13 @@
   items:
     - page: ./api.yaml
 - page: reporting.md
+- page: ./MigrateSubscriptions.md
 
-
+- group: Settings
+  items:
+    - page: ./settings/PersonalDetails.md
+    - page: ./settings/CompanyandBranding.md
+    - page: ./settings/InvoicesSubscriptions.md
+    - page: ./settings/PlansandBilling.md
+    - page: ./settings/MerchantAccount.md
+    - page: ./settings/DeveloperSettings.md

@@ -41,9 +41,7 @@
 
 - group: Developer Guide
   items:
-    - page: ./api.yaml
-- page: reporting.md
-- page: ./MigrateSubscriptions.md
+    - page: ./Developer Guide/api2.json
 
 - group: Settings
   items:
@@ -58,3 +56,7 @@
   page: ./Users/Users.md
   items:
     - page: ./Users/RolePermissionsMatrix.md
+
+- page: ./MigrateSubscriptions.md
+- page: Support&Communication.md
+ 

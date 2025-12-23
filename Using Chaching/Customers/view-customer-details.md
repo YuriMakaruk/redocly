@@ -1,14 +1,14 @@
 # View Customer Details
 
 # Customer Details View
-
+{% img src="./images/view.png" alt="view.png" withLightbox=true width="" height="" /%}
 When you select **View details** on a customer row, you are taken to the **Customer Details** page. This page displays all available information about the selected customer, including subscriptions, payments, payment methods, invoices, and profile details.
 
 ## Header Actions
 
 | **Element** | **Description** |
 | --- | --- |
-| **Customer Name** | Displayed at the top of the page (e.g., *netflix*). |
+| **Customer Name** | Displayed at the top of the page. |
 | **Delete** | Permanently deletes the customer from your workspace. |
 | **Edit customer** | Opens the customer editor where you can update contact, billing, or shipping details. |
 | **Email** | The customer’s primary email address. |

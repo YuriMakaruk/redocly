@@ -68,7 +68,7 @@ Each option displays input fields dynamically based on the selection.
 An **Apply** button narrows down the invoices list.
 
 ## Export Options
-
+{% img src="./export.png" alt="export.png" withLightbox=true width="" height="" /%}
 Exports the invoices list. When filters are applied, exports only selected invoices.  
 
 | **Format** | **Description** |

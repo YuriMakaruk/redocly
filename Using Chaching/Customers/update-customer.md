@@ -46,6 +46,4 @@ The **Edit Customer** page allows business users to update customer profile info
 | **State** | Shipping state or region. | Optional |
 | **Zip** | Postal/ZIP code. | Optional |
 
-## Update customer button
-
-Saves all updated customer information.
+Click the Update customer button to save the updated customer information.

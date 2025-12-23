@@ -4,6 +4,7 @@ Use this flow to create a recurring subscription for an existing customer based 
 ## Step 1: Open Create Subscription
 
 1. In the top-right corner of the dashboard, click **Create**.
+   {% img src="../Create a Payment/create.png" alt="create.png" withLightbox=true width="" height="" /%}
 2. Select **Create subscription**.
 
 ## Step 2: Select Customer

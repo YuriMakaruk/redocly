@@ -14,15 +14,8 @@ You can filter the list of customers using the following tabs:
 
 ## Active Subscriptions Filter
 
-Below the tabs, you will see an additional filter:
-
-**Active subscriptions (menu)**
-
+Below the Filter tabs, you will see the Active subscriptions filter that:
 - Allows you to filter customers by subscription status.
-- Includes the option:
-    
-    **Filtering: only rows missing active subscriptions.**
-    
 - Click **Apply** to update the results.
 
 This filter is useful if you want to identify customers who currently do not have an active subscription.

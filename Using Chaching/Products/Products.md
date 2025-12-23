@@ -50,9 +50,7 @@ Opens a side panel to define a new product and its billing configuration.
 | **Create product** | Saves the product and makes it available for pricing and subscriptions. | — |
 
 ## Products Table
-
-Displayed below the filters.
-
+{% img src="./ProductsTable.png" alt="ProductsTable.png" withLightbox=true width="" height="" /%}
 | **Column** | **Description** |
 | --- | --- |
 | **Product Name** | Name of the product. |
@@ -62,8 +60,7 @@ Displayed below the filters.
 | **Updated** | Date of last modification. |
 
 Clicking a product name in the table row opens the **Product Details** page.
-
-![image.png](image%201.png)
+{% img src="./ProductDetails.png" alt="ProductDetails.png" withLightbox=true width="" height="" /%}
 
 # Product Details Page
 
@@ -98,7 +95,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Product ID** | Unique system identifier for the product. |
 
 ### Create New Pricing
-
+{% img src="./Createnewpricing.png" alt="Createnewpricing.png" withLightbox=true width="" height="" /%}
 Opens a side panel to add a new price to the product.
 
 | **Name** | **Description** | **Required / Optional** |

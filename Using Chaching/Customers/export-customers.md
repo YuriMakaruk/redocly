@@ -1,7 +1,7 @@
 # Export Customers
 
 ChaChing allows you to export customer records for reporting, analytics, or backup. You can export data in **CSV** or **XLSX** formats and optionally customize the date range and the columns included.
-
+{% img src="./images/export.png" alt="export.png" withLightbox=true width="" height="" /%}
 When you click **Export** on the Customers page, the export window includes the following options:
 
 ## Date Range

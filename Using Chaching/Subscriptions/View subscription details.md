@@ -1,8 +1,10 @@
 # View subscription details
 
-When the user clicks **View Customer** from the three-dot menu in the subscription list, a detailed **Subscription Details** window opens.
-
+When the user clicks **View Subscription** from the three-dot menu in the subscription list, a detailed **Subscription Details** window opens.
+{% img src="./viewSubscription.png" alt="viewSubscription.png" withLightbox=true width="" height="" /%}
 This view provides full information about the selected subscription, customer context, pricing, invoices, and upcoming billing.
+
+When the user clicks **View Customer** from the three-dot menu in the subscription list, a **Customer Details** window opens. For details, refer to [View Customer Details](../Customers/view-customer-details.md).
 
 ## 1. Header Actions
 

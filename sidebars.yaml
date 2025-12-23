@@ -6,6 +6,7 @@
     - page: ./onboarding.md
     - page: ./dashboardOverview.md
     - page: ./entities.md
+    - page: ./CreateAccount.md
 
 - group: Using Chaching
   items:
@@ -24,7 +25,7 @@
     - group: Invoices
       page: Using Chaching/Invoices/Invoices.md
       items:
-        - page: Using Chaching/Invoices/Invoices.md
+        - page: ./Using Chaching/Subscriptions/View subscription details.md
     - group: Transactions
       page: Using Chaching/Transactions/Transactions.md
       items:

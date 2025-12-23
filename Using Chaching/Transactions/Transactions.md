@@ -52,7 +52,7 @@ Exports the transactions list. When filters are applied, exports only selected t
 | **CSV** | Exports all currently filtered transactions as a CSV file. |
 | **XLSX** | Exports the data as an Excel spreadsheet. |
 
-# Transactions Table
+## Transactions Table
 
 Displayed below the filters.
 
@@ -68,17 +68,48 @@ Displayed below the filters.
 
 ### Transactions Details
 
-Clicking the three dots in a transactions row opens a detailed transactions details.
+Clicking the three dots in a transactions row opens transactions details.
 
 ![image.png](image.png)
 
-| **Field** | **Description** |
-| --- | --- |
-| **Amount** | The attempted transaction amount. |
-| **Status** | The detailed internal status (e.g., *PURCHASE_ERRORED*). |
-| **Timeline** | Step-by-step history such as *Payment started*, *Payment failed*, with timestamps. |
-| **Error message** | Shows reason for failure when applicable. |
-| **Last update** | Timestamp of the last system update for this payment. |
-| **Customer** | Customer associated with the payment. |
-| **Payment ID** | Unique identifier for this payment attempt. |
-| **Payment method** | Details of the payment method used (e.g., *Visa •••• 4242*). |
+Here’s an updated and clearer version of the section, aligned exactly with what the UI shows in your example:
+
+#### **Overview**
+
+Displays the transaction amount and its final status.
+
+| **Field**  | **Description**                                         |
+| ---------- | ------------------------------------------------------- |
+| **Amount** | Total amount of the transaction (e.g., **$317.24**).    |
+| **Status** | Final transaction status (e.g., *Succeeded*, *Failed*). |
+
+#### **Timeline**
+
+Shows the chronological progress of the transaction with timestamps.
+
+| **Event**              | **Description**                                            |
+| ---------------------- | ---------------------------------------------------------- |
+| **Payment started**    | The moment the payment attempt was initiated.              |
+| **Payment authorised** | Confirmation that the payment was successfully authorised. |
+
+#### **Payment Breakdown**
+
+Provides a financial breakdown of the transaction.
+
+| **Field**          | **Description**                           |
+| ------------------ | ----------------------------------------- |
+| **Payment amount** | Original amount charged to the customer.  |
+| **Fee**            | Processing fee deducted from the payment. |
+| **Net amount**     | Amount received after fees are applied.   |
+
+#### **Details**
+
+Contains metadata and identifiers related to the transaction.
+
+| **Field**          | **Description**                                                |
+| ------------------ | -------------------------------------------------------------- |
+| **Last update**    | Date of the most recent status update.                         |
+| **Customer**       | Email address of the customer associated with the transaction. |
+| **Payment ID**     | Unique identifier for this transaction.                        |
+| **Payment method** | Payment method used (e.g., *UnionPay •••• 0005*).              |
+

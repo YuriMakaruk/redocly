@@ -1,6 +1,6 @@
 # Dashboard Overview
 
-After the tenant activation, you will be automatically redirected to your **ChaChing Dashboard**. This is your main control center where you may want to:
+After the tenant activation, you will be automatically redirected to your **ChaChing Dashboard**. This is your main control page where you can:
 
 - Explore **Subscriptions** to confirm migrated data
 - Review **Products** to ensure your catalog is synchronized
@@ -56,7 +56,7 @@ The left sidebar helps you quickly access every part of your tenant:
     
 - **Users**
     
-    Manage team members and access permissions. For details, refer to [Users](./Users/Users.md)
+    Manage team members and access permissions. 
     
 
 ## Account
@@ -82,7 +82,7 @@ The **Home** section is designed to give you an immediate, at-a-glance understan
     
     The filter lets you switch between time periods:
     
-    - **Last 30 days** (default)
+    - Last 30 days (default)
     - Last 7 days
     - Last 3 months
     - Year to date

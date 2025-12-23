@@ -1,8 +1,8 @@
 # User Registration & Onboarding Guide
 
-The ChaChing onboarding process guides you through setting up your account, configuring your branding, selecting your integration type, importing data from Stripe, and reviewing all changes before completing your migration. Before you begin, it’s helpful to understand what happens once the migration is confirmed, as this ensures a smooth transition and clear expectations.
+The ChaChing onboarding process guides you through setting up your account, configuring your branding, selecting your integration type, importing data from Stripe, and reviewing all changes before completing your migration. Before you begin, it’s helpful to understand what happens once the migration is completed, as this ensures a smooth transition and clear expectations.
 
-**What Happens After You Confirm the Migration**
+**What Happens After the Migration**
 
 When you complete the onboarding flow and approve the migration, ChaChing automatically handles all required steps behind the scenes:
 
@@ -55,7 +55,7 @@ You will be prompted to verify your email.
 
 {% img src="./images/prompt.png" alt="prompt.png" withLightbox=true width="" height="" /%}
 
-Open the email from Chaching and click Verify Email.
+3. Open the email from Chaching and click **Verify Email**.
 
 {% img src="./images/email.png" alt="email.png" withLightbox=true width="" height="" /%}
 
@@ -103,9 +103,7 @@ Fill in all required fields and click **Continue**.
 
 ## Step 2: Branding
 
-In this step, you can personalize the look and feel of your tenant.
-
-**You can:**
+In this step, you can personalize the look and feel of your tenant, such as:
 
 - Upload your company logo
 - Choose your primary and accent colors
@@ -123,7 +121,7 @@ Click **Continue** once you’re satisfied with the preview.
 | **Accent Color** | Secondary color used for highlights and UI accents. Select from color picker. | **Required** |
 | **Save Changes** | Saves all branding updates and applies them to your tenant preview. | — |
 
-Note: the branding can be personalized in the tenant profile settings. For details, refer to [Company and Branding](./settings/CompanyandBranding.md)
+**Note**: the branding can be personalized in the tenant profile settings. For details, refer to [Company and Branding](./settings/CompanyandBranding.md)
 
 ## Step 3. Integration Type
 
@@ -205,7 +203,7 @@ Click **Continue** when ready.
 | **Name** | **Description** |
 | --- | --- |
 | **Subscription ID** | Unique identifier of the subscription imported from Stripe. Used to map and migrate subscription records into ChaChing. |
-| **Status** | Current subscription state (e.g., active, trialing, past_due). Helps determine which subscriptions are eligible for migration. |
+| **Status** | Current subscription state (e.g., active, trial, paused). Helps determine which subscriptions are eligible for migration. |
 | **Customer Name** | Full name of the customer associated with the subscription. |
 | **Customer Email** | Email address of the customer. Used for billing communication and subscription mapping. |
 | **Start Date** | The date when the subscription originally started in Stripe. |
@@ -229,7 +227,7 @@ Below the savings section, you’ll be asked to connect your bank account.
 
 To receive payouts, connect your bank account via Plaid.
 
-When completed successfully, the screen will display:
+When completed successfully, you will see:
 
 - Bank name
 - Masked account number

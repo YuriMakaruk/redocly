@@ -48,24 +48,18 @@ The dashboard and API are fully connected — changes made in one are instantly 
 
 ## Release Notes
 
-<aside>
-💡 MVP version. Core subscription, product, and customer management are live. Payments integration in progress.
+**MVP Release**
 
-</aside>
+ChaChing is currently in its MVP stage. Core functionality for subscription management, product configuration, and customer management is fully available.
 
-<aside>
-💡 Current Limitation:
-Only flat-rate pricing is supported. Tiered, package, and usage-based models will be added in future releases.
 
-</aside>
-<br>
 
-**Supported Pricing Models (MVP)**
+**Current Limitations** 
 
-- **Flat rate — Supported**
-- **Tiered — Not supported (coming soon)**
-- **Package/bulk — Not supported (coming soon)**
-- **Usage-based/metred — Not supported (coming soon)**
+At this stage, ChaChing supports flat-rate pricing only. The following pricing models are not yet supported and will be introduced in future releases:
+* Tiered pricing
+* Package / bulk pricing
+* Usage-based (metered) pricing
 
 ## Need Help?
 Refer to:

@@ -1,6 +1,6 @@
 # Entities Overview
 
-This section defines the core entities used in Chaching and explains how data is organized across **Companies**, **Accounts**, **Users**. It explains the main building blocks of the Chaching system - the entities you will encounter during onboarding and account setup:
+This section defines the core entities used in Chaching and explains how data is organized across **Companies**, **Accounts**, **Users**. It explains the main building blocks of the Chaching system:
 
 - **Companies** - your main organizational workspace
 - **Accounts** - separate spaces for banking and financial integrations
@@ -28,7 +28,7 @@ A Company holds information and settings that apply **globally** to all Accounts
 
 - Companies are **always created**. Even if a user creates only one account, it still exists within a tenant Company.
 - Companies are **not Accounts**; each Account belongs to exactly one Company.
-- Multi-tenant functionality (e.g., Coca-Cola + Starbucks under one umbrella) is **NOT** *not supported, coming soon*.
+- Multi-tenant functionality (e.g., Coca-Cola + Starbucks under one umbrella) is not supported (coming soon).
 
 ## Accounts
 

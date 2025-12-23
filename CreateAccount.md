@@ -34,15 +34,15 @@ During account creation, you can mark the account as **Sandbox**.
 * Once completed, the Dashboard clearly shows **Test Mode**
 * Sandbox and live accounts are fully isolated
 
-## Important MVP Limitations
+## Note
 
-⚠️ **Incomplete setup deletes the account**
+**Incomplete setup deletes the account**
 
 * If you exit onboarding after creating an account but before completion, the account is **automatically deleted**
 * Deleted accounts **cannot be recovered**
 * You must restart the account creation process
 
-⚠️ **No account limit**
+**No account limit**
 
 * You can create **unlimited accounts**
 * Each account requires its own valid Stripe credentials

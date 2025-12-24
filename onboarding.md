@@ -41,7 +41,7 @@ Before onboarding into Chaching, the user must create the following:
 
 1. Navigate to:
     
-    [**https://test.chaching.io/sign-up**](https://test.chaching.io/sign-up)
+    [**https://dashboard.chaching.io/sign-in**](https://dashboard.chaching.io/sign-in)
     
 2. Enter the email address and click **Continue with email**.
 

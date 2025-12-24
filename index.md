@@ -58,8 +58,8 @@ ChaChing is currently in its MVP stage. Core functionality for subscription mana
 
 At this stage, ChaChing supports flat-rate pricing only. The following pricing models are not yet supported and will be introduced in future releases:
 * Tiered pricing
-* Package / bulk pricing
-* Usage-based (metered) pricing
+* Package/bulk pricing
+* Usage-based pricing
 
 ## Need Help?
 Refer to:

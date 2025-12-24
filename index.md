@@ -64,8 +64,8 @@ At this stage, ChaChing supports flat-rate pricing only. The following pricing m
 ## Need Help?
 Refer to:
 - [Documentation](./index.md)
-- [Contact Support](./Support&Communication.md)
-- [FAQ](./Support&Communication.md)
+- [Contact Support](./support&Communication.md)
+- [FAQ](./support&Communication.md)
 
 <!--
 ## Tiered Pricing 

@@ -6,7 +6,7 @@
     - page: ./onboarding.md
     - page: ./dashboardOverview.md
     - page: ./entities.md
-    - page: ./CreateAccount.md
+    - page: ./createAccount.md
 
 - group: Using Chaching
   items:
@@ -58,6 +58,6 @@
   items:
     - page: ./Users/RolePermissionsMatrix.md
 
-- page: ./MigrateSubscriptions.md
-- page: Support&Communication.md
+- page: ./migrateSubscriptions.md
+- page: support&Communication.md
  

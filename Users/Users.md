@@ -44,7 +44,7 @@ An invitation email will be sent to the specified address.
 
 The user will gain access to the ChaChing dashboard according to the assigned role after accepting the invitation.
 
-## Accept Invitation and Complete Sign-Up
+### Accept Invitation and Complete Sign-Up
 
 ![image.png](image.png)
 

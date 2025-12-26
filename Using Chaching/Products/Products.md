@@ -62,11 +62,11 @@ Opens a side panel to define a new product and its billing configuration.
 Clicking a product name in the table row opens the **Product Details** page.
 {% img src="./ProductDetails.png" alt="ProductDetails.png" withLightbox=true width="" height="" /%}
 
-# Product Details Page
+### Product Details Page
 
 ![image.png](image%202.png)
 
-### Header
+#### Header
 
 | **Element** | **Description** |
 | --- | --- |
@@ -75,7 +75,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Delete** | Permanently deletes the product. |
 | **Edit** | Opens the product for editing. |
 
-## Pricing Section
+#### Pricing Section
 
 | **Field** | **Description** |
 | --- | --- |
@@ -85,7 +85,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Created** | Price creation date. |
 | **Description** | Optional pricing description. |
 
-## Product Metadata (Details Section)
+#### Product Metadata (Details Section)
 
 | **Field** | **Description** |
 | --- | --- |
@@ -94,7 +94,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Tax category** | Assigned tax category. |
 | **Product ID** | Unique system identifier for the product. |
 
-### Create New Pricing
+#### Create New Pricing
 {% img src="./Createnewpricing.png" alt="Createnewpricing.png" withLightbox=true width="" height="" /%}
 Opens a side panel to add a new price to the product.
 

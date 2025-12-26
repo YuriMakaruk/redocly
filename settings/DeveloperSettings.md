@@ -27,8 +27,7 @@ This section provides access to standard API keys used to authenticate requests 
 
 ## Webhooks
 
-### Notes
+### Important Notes
 
-- Webhooks are not yet available for configuration.
-- Once enabled, webhooks will allow real-time notifications for events such as payments, invoices, and subscription updates.
 - Future releases are expected to include webhook endpoint configuration, event selection, and delivery logs.
+- Once enabled, webhooks will allow real-time notifications for events such as payments, invoices, and subscription updates.

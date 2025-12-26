@@ -6,7 +6,7 @@ When you click **Subscriptions**, you will see a filter panel and a subscription
 
 ![image.png](image.png)
 
-## 1. Status Filters
+## Status Filters
 
 The top row of filters allows you to quickly filter subscriptions by lifecycle state.
 
@@ -20,7 +20,7 @@ The top row of filters allows you to quickly filter subscriptions by lifecycle s
 | **Expired** | Shows subscriptions that reached their end date and expired. |
 | **All** | Displays all subscriptions regardless of status. |
 
-## 2. Additional Filters
+## Additional Filters
 
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
 
@@ -64,7 +64,7 @@ Each option displays input fields dynamically based on the selection.
 
 An **Apply** button narrows down the subscription list.
 
-## 3. Subscription Table
+## Subscription Table
 
 Below the filters, all matching subscriptions are displayed in a table.
 
@@ -80,7 +80,7 @@ Below the filters, all matching subscriptions are displayed in a table.
 | **Created** | Date the subscription was created. |
 | **Renewal** | Next charge or renewal date. |
 
-## 4. Row Actions
+## Row Actions
 
 Each subscription row includes a **menu** on the right side.
 

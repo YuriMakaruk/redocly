@@ -17,14 +17,14 @@ Use this flow to issue an invoice to a customer and either request payment or au
 
 You can choose how the invoice will be paid.
 
-## Option A: Request Payment
+### Option A: Request Payment
 
 | Field | Description |
 | --- | --- |
 | **Request payment** | Creates an invoice and sends it to the customer for manual payment. |
 | **Due in** | Select when the invoice is due: Today, Tomorrow, 7, 14, 30, 45, 60, or 90 days. |
 
-## Option B: Auto-charge Customer
+### Option B: Auto-charge Customer
 
 | Field | Description |
 | --- | --- |

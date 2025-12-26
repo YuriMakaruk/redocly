@@ -2,7 +2,7 @@
 
 The **Migrate Subscriptions** section allows you to manually start or continue migrating existing subscriptions from Stripe into ChaChing. This view provides selection controls, visibility into subscription data, and a clear summary before migration begins.
 
-## **Selection Controls**
+## Selection Controls
 {% img src="./images/migrate.png" alt="migrate.png" withLightbox=true width="" height="" /%}
 | **Control** | **Description** |
 | --- | --- |
@@ -10,7 +10,7 @@ The **Migrate Subscriptions** section allows you to manually start or continue m
 | **Select all active** | Selects only subscriptions with an *active* status. |
 | **Select first 100** | Selects the first 100 subscriptions in the list. Useful for staged migrations. |
 
-## **Migration Summary Panel**
+## Migration Summary Panel
 
 Displayed above the table and updated dynamically as subscriptions are selected.
 
@@ -19,7 +19,7 @@ Displayed above the table and updated dynamically as subscriptions are selected.
 | **Subscriptions selected** | Shows the total number of subscriptions selected for migration. |
 | **Total value** | Displays the combined monetary value of the selected subscriptions. |
 
-## **Subscriptions Table**
+## Subscriptions Table
 
 | **Column** | **Description** |
 | --- | --- |
@@ -32,13 +32,13 @@ Displayed above the table and updated dynamically as subscriptions are selected.
 | **Renewal date** | Next scheduled billing date after migration. |
 | **Amount** | Subscription price charged per billing period. |
 
-## **Continue Migration**
+## Continue Migration
 
 | **Action** | **Description** |
 | --- | --- |
 | **Continue** | Starts the migration process for the selected subscriptions. Subscriptions will be imported from Stripe and become visible in the **Subscriptions** section once completed. |
 
-## **Important Notes**
+## Important Notes
 
 - Migration only starts after clicking **Continue**.
 - Selected subscriptions are cancelled in Stripe and recreated in ChaChing according to their billing cycle.

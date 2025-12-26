@@ -25,7 +25,7 @@
     - group: Invoices
       page: Using Chaching/Invoices/Invoices.md
       items:
-        - page: ./Using Chaching/Subscriptions/View subscription details.md
+        - page: ./Using Chaching/Invoices/View invoices details.md
     - group: Transactions
       page: Using Chaching/Transactions/Transactions.md
       items:

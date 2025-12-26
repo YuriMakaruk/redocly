@@ -20,7 +20,7 @@ This section displays your core account information and provides options to upda
 | **Name** | Your full name displayed across ChaChing. |
 | **Email** | Your login email address. Used for authentication and notifications. |
 | **Password** | Hidden for security. Can be changed via the edit flow. |
-| **Language** | Your preferred interface language. |
+| **Language** | Your preferred interface language. Chaching currently supports English only.|
 
 ### Edit Profile
 
@@ -33,13 +33,13 @@ Changes take effect immediately after saving.
 
 ### Language Settings
 
-The **Language** field controls the UI language for your ChaChing dashboard.
+The **Language** field controls the UI language for your ChaChing dashboard. 
 
 **Current value example:**
 
 - English (US)
 
-You can change the language at any time without affecting other users in the workspace (coming soon).
+You can change the language at any time without affecting other users in the workspace (Chaching currently supports English only.).
 
 ## Login Sessions
 

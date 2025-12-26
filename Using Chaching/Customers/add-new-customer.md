@@ -38,7 +38,7 @@ Click **Add new customer** to create a customer.
 | **State** | Shipping state, province, or region. | Optional |
 | **Zip** | Shipping ZIP or postal code. | Optional |
 
-### Complete the Action
+## Complete the Action
 
 Click **Add customer** to create the customer using the provided details.
 

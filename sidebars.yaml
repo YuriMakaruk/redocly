@@ -42,7 +42,7 @@
 
 - group: Developer Guide
   items:
-    - page: ./Developer Guide/api2.json
+    - page: ./Developer Guide/api.json
 
 - group: Settings
   items:

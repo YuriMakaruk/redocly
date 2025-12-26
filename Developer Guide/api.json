@@ -428,13 +428,14 @@
     },
     "/products/taxCodes": {
       "get": {
+        "description": "Retrieves a list of tax codes with their associated category names. Optionally filter by search term.",
         "operationId": "ProductsController_getTaxesCodes",
         "parameters": [
           {
             "name": "search",
             "required": false,
             "in": "query",
-            "description": "Search tax codes and category names",
+            "description": "Search by tax codes or category names",
             "schema": {
               "type": "string"
             }
@@ -451,7 +452,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Get tax codes with category names",
+            "description": "Successfully retrieved tax codes with category names",
             "content": {
               "application/json": {
                 "schema": {
@@ -466,6 +467,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
         "summary": "Get tax codes with category names",
@@ -476,12 +480,14 @@
     },
     "/products": {
       "get": {
+        "description": "Retrieves a paginated list of all products for the authenticated account. Supports pagination and search functionality.",
         "operationId": "ProductsController_listAllProducts",
         "parameters": [
           {
             "name": "search",
             "required": false,
             "in": "query",
+            "description": "{\"active\":true, \n    \"tax_code\":\"txcd_10000000\",\n    \"ids\":\"prod_299eea6f29146d93aaa4bceb,prod_cc5b3aa61adca9f52747dd40\",\n    \"created[gt|gte|lt|lte]\":1766066322}",
             "schema": {
               "default": "",
               "type": "string"
@@ -520,17 +526,50 @@
         ],
         "responses": {
           "200": {
-            "description": "List all products",
+            "description": "Successfully retrieved paginated list of products",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductPublicDto"
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/ProductPublicDto"
+                      }
+                    },
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "page": {
+                          "type": "number",
+                          "example": 1,
+                          "description": "Current page number"
+                        },
+                        "take": {
+                          "type": "number",
+                          "example": 10,
+                          "description": "Number of items per page"
+                        },
+                        "itemsTotal": {
+                          "type": "number",
+                          "example": 50,
+                          "description": "Total number of items"
+                        },
+                        "pagesTotal": {
+                          "type": "number",
+                          "example": 5,
+                          "description": "Total number of pages"
+                        }
+                      }
+                    }
                   }
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
           }
         },
         "summary": "List all products",
@@ -539,6 +578,7 @@
         ]
       },
       "post": {
+        "description": "Creates a new product with the specified details. The product name must be unique and follow specific naming conventions.",
         "operationId": "ProductsController_createProduct",
         "parameters": [
           {
@@ -553,37 +593,42 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Product creation data",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/CreateProductPublicDto"
+              },
+              "examples": {
+                "Basic Product": {
+                  "value": {
+                    "name": "premium_plan",
+                    "tax_code": "txcd_10000000",
+                    "currency": "usd",
+                    "unit_amount": 2999,
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1
+                    }
+                  }
+                }
               }
             }
           }
         },
         "responses": {
-          "200": {
-            "description": "Create a product",
+          "201": {
+            "description": "Product successfully created",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductPublicDto"
-                  }
+                  "$ref": "#/components/schemas/ProductPublicDto"
                 }
               }
             }
           },
-          "201": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+          "400": {
+            "description": "Invalid or missing API key"
           }
         },
         "summary": "Create a product",
@@ -594,14 +639,17 @@
     },
     "/products/{id}": {
       "get": {
+        "description": "Retrieves details of a specific product by its unique identifier.",
         "operationId": "ProductsController_retrieveProduct",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the product",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "prod_xT4LfvxLMQb4s9uFNIbXf9pm",
               "type": "string"
             }
           },
@@ -617,17 +665,17 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve a product",
+            "description": "Successfully retrieved product",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductPublicDto"
-                  }
+                  "$ref": "#/components/schemas/ProductPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
           }
         },
         "summary": "Retrieve a product",
@@ -636,14 +684,17 @@
         ]
       },
       "patch": {
+        "description": "Updates an existing product with the specified details. Only provided fields will be updated.",
         "operationId": "ProductsController_updateProduct",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the product to update",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "prod_xT4LfvxLMQb4s9uFNIbXf9pm",
               "type": "string"
             }
           },
@@ -659,27 +710,40 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Product update data",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UpdateProductPublicDto"
+              },
+              "examples": {
+                "Update Product": {
+                  "value": {
+                    "name": "premium_plan_updated",
+                    "description": "Updated premium plan",
+                    "tax_code": "txcd_20030000"
+                  }
+                }
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Update a product",
+            "description": "Product successfully updated",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductPublicDto"
-                  }
+                  "$ref": "#/components/schemas/ProductPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Product not found"
           }
         },
         "summary": "Update a product",
@@ -688,14 +752,17 @@
         ]
       },
       "delete": {
+        "description": "Permanently deletes a product. This action cannot be undone.",
         "operationId": "ProductsController_deleteProduct",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the product to delete",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "prod_xT4LfvxLMQb4s9uFNIbXf9pm",
               "type": "string"
             }
           },
@@ -711,7 +778,30 @@
         ],
         "responses": {
           "200": {
-            "description": "Delete a product"
+            "description": "Product successfully deleted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "prod_xT4LfvxLMQb4s9uFNIbXf9pm"
+                    },
+                    "deleted": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Product not found"
           }
         },
         "summary": "Delete a product",
@@ -824,6 +914,7 @@
     },
     "/invoices": {
       "get": {
+        "description": "Retrieves a paginated list of all invoices for the authenticated account. Supports pagination and filtering.",
         "operationId": "InvoicesController_listInvoices",
         "parameters": [
           {
@@ -868,17 +959,17 @@
         ],
         "responses": {
           "200": {
-            "description": "List of invoices",
+            "description": "Successfully retrieved paginated list of invoices",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/InvoicesPublicDto"
-                  }
+                  "$ref": "#/components/schemas/PageDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
         "summary": "List all invoices",
@@ -887,6 +978,7 @@
         ]
       },
       "post": {
+        "description": "Creates a new invoice for a customer. The invoice will include line items, pricing, taxes, and other billing information. The invoice will be in draft status until paid or committed.",
         "operationId": "InvoicesController_createInvoice",
         "parameters": [
           {
@@ -910,8 +1002,8 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "Create an invoice",
+          "201": {
+            "description": "Invoice successfully created",
             "content": {
               "application/json": {
                 "schema": {
@@ -920,18 +1012,14 @@
               }
             }
           },
-          "201": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+          "400": {
+            "description": "Invalid input data or corrupted API key"
+          },
+          "404": {
+            "description": "Customer or price not found"
           }
         },
-        "summary": "Creates an invoice",
+        "summary": "Create an invoice",
         "tags": [
           "Invoices"
         ]
@@ -939,13 +1027,16 @@
     },
     "/invoices/{id}": {
       "get": {
+        "description": "Retrieves a specific invoice by its unique identifier, including all invoice details, line items, and payment information.",
         "operationId": "InvoicesController_retrieveInvoice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the invoice",
             "schema": {
+              "example": "84c413b1-cda9-4637-a75d-352e36274bf2",
               "type": "string"
             }
           },
@@ -961,7 +1052,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Invoice details",
+            "description": "Successfully retrieved the invoice",
             "content": {
               "application/json": {
                 "schema": {
@@ -969,21 +1060,27 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
-        "summary": "Retrieves an invoice",
+        "summary": "Retrieve an invoice",
         "tags": [
           "Invoices"
         ]
       },
       "put": {
+        "description": "Commits and pays an invoice. This action will attempt to charge the customer using the payment method on file and finalize the invoice.",
         "operationId": "InvoicesController_payInvoice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the invoice to pay",
             "schema": {
+              "example": "84c413b1-cda9-4637-a75d-352e36274bf2",
               "type": "string"
             }
           },
@@ -999,22 +1096,31 @@
         ],
         "responses": {
           "200": {
-            "description": "Pay an invoice"
+            "description": "Invoice successfully paid and committed"
+          },
+          "400": {
+            "description": "Invalid or corrupted API key, or invoice cannot be paid"
+          },
+          "404": {
+            "description": "Invoice not found"
           }
         },
-        "summary": "Pays an invoice",
+        "summary": "Pay an invoice",
         "tags": [
           "Invoices"
         ]
       },
       "delete": {
+        "description": "Voids a draft or open invoice. A voided invoice cannot be paid and is marked as cancelled. This action is irreversible.",
         "operationId": "InvoicesController_voidInvoice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the invoice to void",
             "schema": {
+              "example": "84c413b1-cda9-4637-a75d-352e36274bf2",
               "type": "string"
             }
           },
@@ -1030,10 +1136,16 @@
         ],
         "responses": {
           "200": {
-            "description": "Void an invoice"
+            "description": "Invoice successfully voided"
+          },
+          "400": {
+            "description": "Invalid or corrupted API key, or invoice cannot be voided"
+          },
+          "404": {
+            "description": "Invoice not found"
           }
         },
-        "summary": "Voids an invoice",
+        "summary": "Void an invoice",
         "tags": [
           "Invoices"
         ]
@@ -1041,13 +1153,13 @@
     },
     "/invoices/{id}/transactions": {
       "get": {
+        "description": "Retrieves a paginated list of all transactions associated with a specific invoice, including payment attempts, refunds, and adjustments.",
         "operationId": "InvoicesController_getTransactions",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
-            "description": "Invoice ID",
             "schema": {
               "type": "string"
             }
@@ -1094,7 +1206,7 @@
         ],
         "responses": {
           "200": {
-            "description": "List of invoice transactions",
+            "description": "Successfully retrieved paginated list of invoice transactions",
             "content": {
               "application/json": {
                 "schema": {
@@ -1102,8 +1214,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
+          },
+          "404": {
+            "description": "Invoice not found"
           }
         },
+        "summary": "List invoice transactions",
         "tags": [
           "Invoices"
         ]
@@ -1111,14 +1230,16 @@
     },
     "/invoices/{id}/transactions/{transactionId}": {
       "get": {
+        "description": "Retrieves detailed information about a specific transaction associated with an invoice.",
         "operationId": "InvoicesController_getTransaction",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
-            "description": "Invoice ID",
+            "description": "Unique identifier of the invoice",
             "schema": {
+              "example": "84c413b1-cda9-4637-a75d-352e36274bf2",
               "type": "string"
             }
           },
@@ -1126,8 +1247,9 @@
             "name": "transactionId",
             "required": true,
             "in": "path",
-            "description": "Transaction ID",
+            "description": "Unique identifier of the transaction",
             "schema": {
+              "example": "1ac67144-c4eb-4977-a185-674278685a5f",
               "type": "string"
             }
           },
@@ -1143,7 +1265,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Transaction details",
+            "description": "Successfully retrieved transaction details",
             "content": {
               "application/json": {
                 "schema": {
@@ -1151,8 +1273,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
+          },
+          "404": {
+            "description": "Invoice or transaction not found"
           }
         },
+        "summary": "Retrieve invoice transaction",
         "tags": [
           "Invoices"
         ]
@@ -1160,12 +1289,14 @@
     },
     "/taxRates": {
       "get": {
+        "description": "Retrieves a paginated list of all tax rates for the authenticated account. Supports pagination and filtering.",
         "operationId": "TaxesController_findAll",
         "parameters": [
           {
             "name": "search",
             "required": false,
             "in": "query",
+            "description": "{\"active\":true, \n      \"inclusive\":false,\n      \"created[gt|gte|lt|lte]\":1766066322}",
             "schema": {
               "default": "",
               "type": "string"
@@ -1204,17 +1335,17 @@
         ],
         "responses": {
           "200": {
-            "description": "List of tax rates",
+            "description": "Successfully retrieved paginated list of tax rates",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaxesPublicDto"
-                  }
+                  "$ref": "#/components/schemas/PageDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
         "summary": "List all tax rates",
@@ -1223,6 +1354,7 @@
         ]
       },
       "post": {
+        "description": "Creates a new tax rate for the authenticated account. Tax rates define the percentage of tax to be applied to transactions.",
         "operationId": "TaxesController_createTaxRate",
         "parameters": [
           {
@@ -1237,37 +1369,39 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Tax rate data to create",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/CreateTaxPublicDto"
+              },
+              "examples": {
+                "example1": {
+                  "summary": "Basic tax rate",
+                  "value": {
+                    "display_name": "Sales Tax",
+                    "percentage": 8.5,
+                    "inclusive": false,
+                    "active": true
+                  }
+                }
               }
             }
           }
         },
         "responses": {
-          "200": {
-            "description": "Create a tax rate",
+          "201": {
+            "description": "Tax rate successfully created",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/CreateTaxPublicDto"
-                  }
+                  "$ref": "#/components/schemas/TaxesPublicDto"
                 }
               }
             }
           },
-          "201": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+          "400": {
+            "description": "Invalid input data or corrupted API key"
           }
         },
         "summary": "Create a tax rate",
@@ -1278,13 +1412,16 @@
     },
     "/taxRates/{id}": {
       "get": {
+        "description": "Retrieves a specific tax rate by its unique identifier.",
         "operationId": "TaxesController_retrieveTaxRate",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the tax rate",
             "schema": {
+              "example": "txr_inQ4hbLZPyljDXFRCEnjtEqK",
               "type": "string"
             }
           },
@@ -1300,17 +1437,17 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve a tax rate",
+            "description": "Successfully retrieved the tax rate",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaxesPublicDto"
-                  }
+                  "$ref": "#/components/schemas/TaxesPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
         "summary": "Retrieve a tax rate",
@@ -1319,13 +1456,16 @@
         ]
       },
       "patch": {
+        "description": "Updates an existing tax rate by its unique identifier. Only the provided fields will be updated.",
         "operationId": "TaxesController_updateTaxRate",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the tax rate to update",
             "schema": {
+              "example": "txr_inQ4hbLZPyljDXFRCEnjtEqK",
               "type": "string"
             }
           },
@@ -1351,17 +1491,17 @@
         },
         "responses": {
           "200": {
-            "description": "Update a tax rate",
+            "description": "Tax rate successfully updated",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/UpdateTaxPublicDto"
-                  }
+                  "$ref": "#/components/schemas/TaxesPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid input data or corrupted API key"
           }
         },
         "summary": "Update a tax rate",
@@ -1372,12 +1512,14 @@
     },
     "/prices": {
       "get": {
+        "description": "Retrieves a paginated list of all prices for the authenticated account. Supports pagination and search functionality.",
         "operationId": "PricesController_listAllPrices",
         "parameters": [
           {
             "name": "search",
             "required": false,
             "in": "query",
+            "description": "{\"active\":true, \n      \"inclusive\":false,\n      \"currency\":\"usd\",\n      \"type\":\"recurring|one_time\",\n      \"product\":\"prod_5S8Wt9GNRDxZ7Tjy6g9KKBb5\",\n      \"created[gt|gte|lt|lte]\":1766066322}",
             "schema": {
               "default": "",
               "type": "string"
@@ -1416,17 +1558,46 @@
         ],
         "responses": {
           "200": {
-            "description": "List all prices",
+            "description": "Successfully retrieved paginated list of prices",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PricePublicDto"
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/PricePublicDto"
+                      }
+                    },
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "page": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "take": {
+                          "type": "number",
+                          "example": 10
+                        },
+                        "itemsTotal": {
+                          "type": "number",
+                          "example": 50
+                        },
+                        "pagesTotal": {
+                          "type": "number",
+                          "example": 5
+                        }
+                      }
+                    }
                   }
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
           }
         },
         "summary": "List all prices",
@@ -1437,14 +1608,17 @@
     },
     "/prices/{id}": {
       "get": {
+        "description": "Retrieves details of a specific price by its unique identifier.",
         "operationId": "PricesController_retrievePrice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the price",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "price_1SGKTmDZYOQH9uHk1vaSxPKa",
               "type": "string"
             }
           },
@@ -1460,17 +1634,17 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve a price",
+            "description": "Successfully retrieved price",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PricePublicDto"
-                  }
+                  "$ref": "#/components/schemas/PricePublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
           }
         },
         "summary": "Retrieve a price",
@@ -1479,14 +1653,17 @@
         ]
       },
       "post": {
+        "description": "Creates a new price for an existing product. The price can be one-time or recurring (subscription-based).",
         "operationId": "PricesController_createPrice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the product to add the price to",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "prod_xT4LfvxLMQb4s9uFNIbXf9pm",
               "type": "string"
             }
           },
@@ -1502,37 +1679,56 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Price creation data",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/CreatePricePublicDto"
+              },
+              "examples": {
+                "Recurring Price": {
+                  "value": {
+                    "currency": "USD",
+                    "unit_amount": 2999,
+                    "type": "recurring",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1
+                    },
+                    "tax_behavior": "exclusive",
+                    "description": "Monthly subscription"
+                  }
+                },
+                "One-time Price": {
+                  "value": {
+                    "currency": "USD",
+                    "unit_amount": 9999,
+                    "type": "one_time",
+                    "recurring": null,
+                    "tax_behavior": "exclusive",
+                    "description": "One-time purchase"
+                  }
+                }
               }
             }
           }
         },
         "responses": {
-          "200": {
-            "description": "Create a price for a product",
+          "201": {
+            "description": "Price successfully created",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PricePublicDto"
-                  }
+                  "$ref": "#/components/schemas/PricePublicDto"
                 }
               }
             }
           },
-          "201": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Product not found"
           }
         },
         "summary": "Create a price for a product",
@@ -1541,14 +1737,17 @@
         ]
       },
       "delete": {
+        "description": "Permanently deletes a price. This action cannot be undone. Active prices associated with active subscriptions should be deactivated instead of deleted.",
         "operationId": "PricesController_deletePrice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the price to delete",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "price_1SGKTmDZYOQH9uHk1vaSxPKa",
               "type": "string"
             }
           },
@@ -1564,7 +1763,30 @@
         ],
         "responses": {
           "200": {
-            "description": "Delete a price"
+            "description": "Price successfully deleted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "price_1SGKTmDZYOQH9uHk1vaSxPKa"
+                    },
+                    "deleted": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Price not found"
           }
         },
         "summary": "Delete a price",
@@ -1575,14 +1797,17 @@
     },
     "/prices/{id}/inactive": {
       "patch": {
+        "description": "Updates an inactive price with new details. Only inactive prices can be fully updated with this endpoint.",
         "operationId": "PricesController_updateInactivePrice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the inactive price to update",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "price_1SGKTmDZYOQH9uHk1vaSxPKa",
               "type": "string"
             }
           },
@@ -1598,27 +1823,46 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Price update data",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/CreatePricePublicDto"
+              },
+              "examples": {
+                "Update Recurring Price": {
+                  "value": {
+                    "currency": "USD",
+                    "unit_amount": 3999,
+                    "type": "recurring",
+                    "recurring": {
+                      "interval": "month",
+                      "interval_count": 1
+                    },
+                    "tax_behavior": "exclusive",
+                    "description": "Updated monthly subscription"
+                  }
+                }
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Update an inactive price",
+            "description": "Price successfully updated",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PricePublicDto"
-                  }
+                  "$ref": "#/components/schemas/PricePublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Price not found"
           }
         },
         "summary": "Update an inactive price",
@@ -1629,14 +1873,17 @@
     },
     "/prices/{id}/active": {
       "patch": {
+        "description": "Updates metadata of an active price. Only the description field can be modified for active prices to maintain billing consistency.",
         "operationId": "PricesController_updateActivePrice",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the active price to update",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "price_1SGKTmDZYOQH9uHk1vaSxPKa",
               "type": "string"
             }
           },
@@ -1652,27 +1899,38 @@
         ],
         "requestBody": {
           "required": true,
+          "description": "Price metadata update data (only description can be updated for active prices)",
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UpdatePriceDto"
+              },
+              "examples": {
+                "Update Description": {
+                  "value": {
+                    "description": "Updated description for active price"
+                  }
+                }
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Update an active price",
+            "description": "Price metadata successfully updated",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PricePublicDto"
-                  }
+                  "$ref": "#/components/schemas/PricePublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or missing API key"
+          },
+          "404": {
+            "description": "Price not found"
           }
         },
         "summary": "Update an active price",
@@ -1683,6 +1941,7 @@
     },
     "/subscriptions": {
       "get": {
+        "description": "Retrieves a paginated list of all subscriptions for the authenticated account. Supports pagination and filtering.",
         "operationId": "SubscriptionsController_listSubscriptions",
         "parameters": [
           {
@@ -1727,17 +1986,17 @@
         ],
         "responses": {
           "200": {
-            "description": "List of subscriptions",
+            "description": "Successfully retrieved paginated list of subscriptions",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SubscriptionsPublicDto"
-                  }
+                  "$ref": "#/components/schemas/PageDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
           }
         },
         "summary": "List all subscriptions",
@@ -1746,6 +2005,7 @@
         ]
       },
       "post": {
+        "description": "Creates a new subscription for a customer. The subscription will include product items, pricing, and billing information.",
         "operationId": "SubscriptionsController_createSubscription",
         "parameters": [
           {
@@ -1769,31 +2029,24 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "Create a subscription",
+          "201": {
+            "description": "Subscription successfully created",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SubscriptionsPublicDto"
-                  }
+                  "$ref": "#/components/schemas/SubscriptionsPublicDto"
                 }
               }
             }
           },
-          "201": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+          "400": {
+            "description": "Invalid input data or corrupted API key"
+          },
+          "404": {
+            "description": "Customer or price not found"
           }
         },
-        "summary": "Creates a subscription",
+        "summary": "Create a subscription",
         "tags": [
           "Subscriptions"
         ]
@@ -1801,14 +2054,17 @@
     },
     "/subscriptions/{id}": {
       "get": {
+        "description": "Retrieves a specific subscription by its unique identifier.",
         "operationId": "SubscriptionsController_retrieveSubscription",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the subscription",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "sub_2FdhgypnsJQn9mZlY5qGaElL",
               "type": "string"
             }
           },
@@ -1824,33 +2080,39 @@
         ],
         "responses": {
           "200": {
-            "description": "Retrieve a subscription",
+            "description": "Successfully retrieved the subscription",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SubscriptionsPublicDto"
-                  }
+                  "$ref": "#/components/schemas/SubscriptionsPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
+          },
+          "404": {
+            "description": "Subscription not found"
           }
         },
-        "summary": "Retrieves a subscription",
+        "summary": "Retrieve a subscription",
         "tags": [
           "Subscriptions"
         ]
       },
       "patch": {
+        "description": "Updates an existing subscription by its unique identifier. Can modify items, pricing, billing information, and other subscription details.",
         "operationId": "SubscriptionsController_updateSubscription",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the subscription to update",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "sub_2FdhgypnsJQn9mZlY5qGaElL",
               "type": "string"
             }
           },
@@ -1876,33 +2138,39 @@
         },
         "responses": {
           "200": {
-            "description": "Update a subscription",
+            "description": "Subscription successfully updated",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SubscriptionsPublicDto"
-                  }
+                  "$ref": "#/components/schemas/SubscriptionsPublicDto"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid input data or corrupted API key"
+          },
+          "404": {
+            "description": "Subscription not found"
           }
         },
-        "summary": "Updates a subscription",
+        "summary": "Update a subscription",
         "tags": [
           "Subscriptions"
         ]
       },
       "delete": {
+        "description": "Cancels an active subscription. The subscription will be terminated immediately or at the end of the current billing period based on configuration.",
         "operationId": "SubscriptionsController_cancelSubscription",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the subscription to cancel",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "sub_2FdhgypnsJQn9mZlY5qGaElL",
               "type": "string"
             }
           },
@@ -1918,10 +2186,16 @@
         ],
         "responses": {
           "200": {
-            "description": "Cancels a subscription"
+            "description": "Subscription successfully cancelled"
+          },
+          "400": {
+            "description": "Invalid or corrupted API key"
+          },
+          "404": {
+            "description": "Subscription not found"
           }
         },
-        "summary": "Cancels a subscription",
+        "summary": "Cancel a subscription",
         "tags": [
           "Subscriptions"
         ]
@@ -1929,14 +2203,17 @@
     },
     "/subscriptions/{id}/pause": {
       "post": {
+        "description": "Pauses an active subscription. No charges will be made while the subscription is paused. The subscription can be resumed later.",
         "operationId": "SubscriptionsController_pauseSubscription",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the subscription to pause",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "sub_2FdhgypnsJQn9mZlY5qGaElL",
               "type": "string"
             }
           },
@@ -1952,7 +2229,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Pauses a subscription"
+            "description": "Subscription successfully paused"
           },
           "201": {
             "description": "",
@@ -1963,9 +2240,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key, or subscription cannot be paused"
+          },
+          "404": {
+            "description": "Subscription not found"
           }
         },
-        "summary": "Pauses a subscription",
+        "summary": "Pause a subscription",
         "tags": [
           "Subscriptions"
         ]
@@ -1973,14 +2256,17 @@
     },
     "/subscriptions/{id}/resume": {
       "post": {
+        "description": "Resumes a paused subscription. Billing will continue from where it was paused, and the subscription will be active again.",
         "operationId": "SubscriptionsController_resumeSubscription",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
+            "description": "Unique identifier of the subscription to resume",
             "schema": {
               "pattern": "^[a-z]+_[a-zA-Z0-9]+$",
+              "example": "sub_2FdhgypnsJQn9mZlY5qGaElL",
               "type": "string"
             }
           },
@@ -1996,7 +2282,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Resumes a subscription"
+            "description": "Subscription successfully resumed"
           },
           "201": {
             "description": "",
@@ -2007,9 +2293,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid or corrupted API key, or subscription is not paused"
+          },
+          "404": {
+            "description": "Subscription not found"
           }
         },
-        "summary": "Resumes a subscription",
+        "summary": "Resume a subscription",
         "tags": [
           "Subscriptions"
         ]
@@ -4602,7 +4894,7 @@
           "customer": {
             "type": "string",
             "description": "ID of the customer associated with this invoice.",
-            "example": "dfb12d18-40d2-468d-ad99-452a13504690",
+            "example": "cus_383fda0065594749023e8c8d",
             "nullable": true
           },
           "customer_address": {
@@ -4681,7 +4973,7 @@
           "subscription": {
             "type": "string",
             "description": "The ID of the subscription that this invoice was prepared for, if any.",
-            "example": "21fe5345-2a2e-4ee8-8080-b7b07940d34c",
+            "example": "sub_Wm45f5PGQvv67azFeH1z7PO3",
             "nullable": true
           },
           "subtotal": {
@@ -4789,9 +5081,8 @@
           },
           "customer": {
             "type": "string",
-            "format": "uuid",
             "description": "The ID of the customer for whom the invoice is to be created.",
-            "example": "d290f1ee-6c54-4b01-90e6-d701748f0851"
+            "example": "cus_383fda0065594749023e8c8d"
           },
           "due_date": {
             "type": "number",
@@ -4801,7 +5092,7 @@
           "default_payment_method": {
             "type": "string",
             "description": "The default payment method to be used for this invoice. Valid only for invoices where collection_method=charge_automatically.",
-            "example": "7368080f-a7b9-4ced-a4a7-10ed040e12aa"
+            "example": "pm_1SfME4DZYOQH9uHkDutknty1"
           },
           "items": {
             "description": "Array of products to be included in the invoice.",
@@ -5082,6 +5373,11 @@
             "nullable": true,
             "description": "Same as unit_amount",
             "example": "1000"
+          },
+          "link": {
+            "type": "string",
+            "description": "Payment link associated with the price for hosted pages or other off-session payments.",
+            "nullable": true
           }
         },
         "required": [
@@ -5265,7 +5561,7 @@
           "customer": {
             "type": "string",
             "description": "ID of the customer who owns the subscription.",
-            "example": "dfb12d18-40d2-468d-ad99-452a13504690"
+            "example": "cus_739c07713fd4b68565a969cd"
           },
           "ended_at": {
             "type": "number",
@@ -5342,9 +5638,8 @@
         "properties": {
           "customer": {
             "type": "string",
-            "format": "uuid",
             "description": "The ID of the customer for whom the invoice is to be created.",
-            "example": "d290f1ee-6c54-4b01-90e6-d701748f0851"
+            "example": "cus_e29d2542e2615c78af0d313d"
           },
           "items": {
             "description": "Array of products to be included in the subscription.",
@@ -5387,9 +5682,8 @@
         "properties": {
           "customer": {
             "type": "string",
-            "format": "uuid",
             "description": "The ID of the customer for whom the invoice is to be created.",
-            "example": "d290f1ee-6c54-4b01-90e6-d701748f0851"
+            "example": "cus_e29d2542e2615c78af0d313d"
           },
           "items": {
             "description": "Array of products to be included in the subscription.",

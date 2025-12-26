@@ -1,6 +1,5 @@
 # View Customer Details
 
-# Customer Details View
 {% img src="./images/view.png" alt="view.png" withLightbox=true width="" height="" /%}
 When you select **View details** on a customer row, you are taken to the **Customer Details** page. This page displays all available information about the selected customer, including subscriptions, payments, payment methods, invoices, and profile details.
 

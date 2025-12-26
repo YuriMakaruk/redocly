@@ -35,6 +35,6 @@ Select the file format for your export.
 | **CSV** | Comma-separated values. Ideal for spreadsheets, imports, and data tools. |
 | **XLSX** | Excel format. Preserves formatting and supports larger data operations. |
 
-### Complete the Action
+## Complete the Action
 
 Click **Export** to download the customer file with the selected filters and preferences.

@@ -1,7 +1,7 @@
-## Customers
+# Customers
 When you click **Customers** in the left navigation panel, you are taken to the **Customers** page. This section provides a complete view of all customers in your tenant, their billing information, subscription status, and historical payments.
 {% img src="./images/customers.png" alt="customers.png" withLightbox=true width="" height="" /%}
-### Filter Tabs
+## Filter Tabs
 
 You can filter the list of customers using the following tabs:
 

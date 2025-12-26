@@ -43,24 +43,19 @@ Before onboarding into Chaching, the user must create the following:
     
     [**https://dashboard.chaching.io/sign-in**](https://dashboard.chaching.io/sign-in)
     
-2. Enter the email address and click **Continue with email**.
-
-{% img src="./images/Sign-Up.png" alt="Sign-Up.png" withLightbox=true width="" height="" /%}
-
-Alternatively, from the sign-in page click **Get Started**.
-
+2. From the sign-in page, click **Get Started**.
 {% img src="./images/GetStarted.png" alt="GetStarted.png" withLightbox=true width="" height="" /%}
 
-You will be prompted to verify your email.
+3. Enter the email address and click **Continue with email**.
+{% img src="./images/Sign-Up.png" alt="Sign-Up.png" withLightbox=true width="" height="" /%}
 
+You will be prompted to verify your email.
 {% img src="./images/prompt.png" alt="prompt.png" withLightbox=true width="" height="" /%}
 
-3. Open the email from Chaching and click **Verify Email**.
-
+4. Open the email from Chaching and verify your email address.
 {% img src="./images/email.png" alt="email.png" withLightbox=true width="" height="" /%}
 
 Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
-
 {% img src="./images/onboard.png" alt="onboard.png" withLightbox=true width="" height="" /%}
 
 # Onboarding Flow
@@ -102,6 +97,12 @@ Fill in all required fields and click **Continue**.
 | **Password Confirmation** | Enter the same password again to confirm. Must match the password. | **Required** |
 
 ## Step 2: Branding
+Branding defines how your company appears to customers during payments and invoicing.
+
+Your logo and brand colors are shown on:
+* Payment pages
+* Invoice emails
+* Downloadable invoices
 
 In this step, you can personalize the look and feel of your tenant, such as:
 
@@ -121,17 +122,19 @@ Click **Continue** once you’re satisfied with the preview.
 | **Accent Color** | Secondary color used for highlights and UI accents. Select from color picker. | **Required** |
 | **Save Changes** | Saves all branding updates and applies them to your tenant preview. | — |
 
-**Note**: the branding can be personalized in the tenant profile settings. For details, refer to [Company and Branding](./settings/CompanyandBranding.md)
+**Note**: You can update these settings later in Settings → Company & Branding. For details, refer to [Company and Branding](./settings/CompanyandBranding.md)
 
 ## Step 3. Integration Type
 
 In this step, you select how your platform currently processes payments. ChaChing supports multiple integration models, so choosing the correct one ensures you receive the correct setup instructions in the next steps.
 
+ChaChing always uses Stripe as the payment processor. This step defines where and how the payment page is displayed.
+
 You will see three options:
 
-- **Hosted Page** – if you use Stripe Checkout or similar hosted payment pages.
-- **API Solution** – if your system directly integrates with Stripe’s Billing APIs.
-- **Both** – if you use both hosted checkout and direct API calls.
+- **Hosted Page** – Customers are redirected to a ChaChing-hosted payment page (replaces Stripe Checkout links).
+- **API Solution** – Use this option if your application makes direct Stripe Billing API calls and you plan to migrate those calls to ChaChing’s API.
+- **Both** – if you use both hosted page checkout and direct API calls.
 
 After selecting an option, click **Continue** to proceed.
 
@@ -149,15 +152,26 @@ Click **I replaced the link** when complete.
 
 ### Option 2: Replace API Endpoints
 
-If you selected **API Integration**, ChaChing will explain how to replace your Stripe API calls with ChaChing API calls.
+If you selected **API Integration**, ChaChing will guide you through updating your Stripe API calls with ChaChing API calls.
 
 You’ll find:
 
-- A link to the API documentation
-- A mapping overview showing that ChaChing uses a Stripe-compatible format
+- A link to the API documentation.
+  
+  Use the provided link to access ChaChing’s API documentation.
+- Replace Stripe API calls
+  
+  Update your application to replace all existing Stripe Billing and Invoicing endpoints with the corresponding ChaChing API endpoints.
+  ChaChing mimics Stripe’s API structure to accept similar parameters and return compatible responses.
+
 - A confirmation step to proceed once you’ve updated your integration
 
 Click **Continue** to proceed.
+
+**Important Notes**
+* ChaChing does not currently provide a visual endpoint-by-endpoint mapping.
+* API compatibility is designed to minimize changes, but testing is required before going live.
+* This option is intended for teams with existing custom Stripe integrations.
 
 ## Step 4: Stripe Migration
 
@@ -167,8 +181,6 @@ If you already have active Stripe customers, ChaChing can import them for you.
 
 - **Migrate from Stripe**
 - **I don’t have existing subscriptions**
-
-If you don't have existing subscriptions, this part of onboarding will be skipped.
 
 ### 4.1 Connect Your Stripe Account
 
@@ -202,7 +214,7 @@ Click **Continue** when ready.
 
 | **Name** | **Description** |
 | --- | --- |
-| **Subscription ID** | Unique identifier of the subscription imported from Stripe. Used to map and migrate subscription records into ChaChing. |
+| **Subscription ID** | Unique identifier of the subscription imported from Stripe. |
 | **Status** | Current subscription state (e.g., active, trial, paused). Helps determine which subscriptions are eligible for migration. |
 | **Customer Name** | Full name of the customer associated with the subscription. |
 | **Customer Email** | Email address of the customer. Used for billing communication and subscription mapping. |
@@ -216,16 +228,15 @@ Click **Continue** when ready.
 In this step, ChaChing calculates your expected monthly savings compared to Stripe.
 
 {% img src="./images/2025-12-09_14-53-34.png" alt="2025-12-09_14-53-34.png" withLightbox=true width="" height="" /%}
-You’ll see:
-
-- A comparison of Stripe’s 0.7% fee vs ChaChing’s 0.35% fee
-- An estimated monthly savings amount based on the subscriptions you imported
+You’ll see a comparison of Stripe’s 0.7% fee vs ChaChing’s 0.35% fee
 
 Below the savings section, you’ll be asked to connect your bank account.
 
 ### 6.1 Connect Your Bank
 
-To receive payouts, connect your bank account via Plaid.
+To receive payouts and allow automatic collection of processing fees, you must connect your bank account.
+
+We use Plaid to securely link your bank account.
 
 When completed successfully, you will see:
 

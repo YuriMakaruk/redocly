@@ -42,7 +42,7 @@
 
 - group: Developer Guide
   items:
-    - page: ./Developer Guide/api.json
+    - page: ./Developer Guide/openapi.json
 
 - group: Settings
   items:

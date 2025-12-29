@@ -812,6 +812,7 @@
     },
     "/transactions": {
       "get": {
+        "description": "Retrieves a list of transactions for the current account, based on the authentication that was used to make the request.",
         "operationId": "TransactionsController_getTransactions",
         "parameters": [
           {
@@ -867,6 +868,7 @@
             }
           }
         },
+        "summary": "List all transactions",
         "tags": [
           "Transactions"
         ]
@@ -874,6 +876,7 @@
     },
     "/transactions/{id}": {
       "get": {
+        "description": "Retrieves detailed information about a specific transaction for the current account, based on the authentication that was used to make the request.",
         "operationId": "TransactionsController_getTransaction",
         "parameters": [
           {
@@ -907,6 +910,7 @@
             }
           }
         },
+        "summary": "Retrieve a transaction",
         "tags": [
           "Transactions"
         ]
@@ -2309,6 +2313,7 @@
     },
     "/balance": {
       "get": {
+        "description": "Retrieves the current account balance, based on the authentication that was used to make the request.",
         "operationId": "BalanceController_getBalance",
         "parameters": [
           {
@@ -2341,6 +2346,7 @@
     },
     "/payment-methods": {
       "get": {
+        "description": "Retrieves a list of payment methods for the current account, based on the authentication that was used to make the request.",
         "operationId": "PaymentMethodsController_getPaymentMethods",
         "parameters": [
           {
@@ -2395,7 +2401,7 @@
             }
           }
         },
-        "summary": "List payment methods",
+        "summary": "List all payment methods",
         "tags": [
           "Payment Methods"
         ]
@@ -2403,6 +2409,7 @@
     },
     "/payment-methods/{id}": {
       "get": {
+        "description": "Retrieves detailed information about a specific payment method for the current account, based on the authentication that was used to make the request.",
         "operationId": "PaymentMethodsController_getPaymentMethod",
         "parameters": [
           {
@@ -2435,7 +2442,7 @@
             }
           }
         },
-        "summary": "Get payment method details",
+        "summary": "Retrieve a payment method",
         "tags": [
           "Payment Methods"
         ]
@@ -2443,6 +2450,7 @@
     },
     "/payment-methods/{id}/attach": {
       "post": {
+        "description": "Attaches a payment method to a customer for the current account, based on the authentication that was used to make the request.",
         "operationId": "PaymentMethodsController_attachPaymentMethod",
         "parameters": [
           {
@@ -2495,7 +2503,7 @@
             }
           }
         },
-        "summary": "Attach payment method to customer",
+        "summary": "Attach a payment method",
         "tags": [
           "Payment Methods"
         ]
@@ -2503,6 +2511,7 @@
     },
     "/payment-methods/{id}/detach": {
       "post": {
+        "description": "Detaches a payment method from a customer for the current account, based on the authentication that was used to make the request.",
         "operationId": "PaymentMethodsController_detachPaymentMethod",
         "parameters": [
           {
@@ -2545,7 +2554,7 @@
             }
           }
         },
-        "summary": "Detach payment method from customer",
+        "summary": "Detach a payment method",
         "tags": [
           "Payment Methods"
         ]
@@ -2554,11 +2563,50 @@
   },
   "info": {
     "title": "Chaching API",
-    "description": "Chaching Service - API documentation.",
+    "description": {
+  "$ref": "../_partials/description.md"
+  },
     "version": "1.0",
     "contact": {}
   },
-  "tags": [],
+  "tags": [
+    {
+      "name": "Customers",
+      "description": "This object represents a customer of your business. Use it to create recurring charges, save payment and contact information, and track payments that belong to the same customer."
+    },
+    {
+      "name": "Products",
+      "description": "Products describe the specific goods or services you offer to your customers. For example, you might offer a Standard and Premium version of your goods or service; each version would be a separate Product."
+    },
+    {
+      "name": "Transactions",
+      "description": "Transactions represent the payments and charges made by your customers."
+    },
+    {
+      "name": "Invoices",
+      "description": "Invoices are statements of amounts owed by a customer, and are either generated one-off, or generated periodically from a subscription."
+    },
+    {
+      "name": "TaxRates",
+      "description": "TaxRates allow you to calculate the tax to collect from your customer."
+    },
+    {
+      "name": "Prices",
+      "description": "This object represents a price in your Chaching account. Use it to define the cost of your products, configure one-time or recurring billing intervals, specify tax behavior, and manage pricing updates or deactivations for your offerings."
+    },
+    {
+      "name": "Subscriptions",
+      "description": "Subscriptions are a way to charge your customers on a recurring basis. They can be used for products or services that are delivered over time, such as memberships or software licenses."
+    },
+    {
+      "name": "Balance",
+      "description": "Balances represent the amount of money in your account. You can use balances to track your income and expenses, and to make payments to your customers or vendors."
+    },
+    {
+      "name": "Payment Methods",
+      "description": "Payment Methods represent a way to collect payment from your customers. They can be attached to customers to make charging easier and more efficient."
+    }
+  ],
   "servers": [],
   "components": {
     "schemas": {
@@ -3298,8 +3346,7 @@
           },
           "name": {
             "type": "string",
-            "pattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "description": "The product name. Must start with a letter or underscore and can only contain letters, numbers, hyphens, and underscores.",
+            "description": "The product name.",
             "example": "premium_plan",
             "minLength": 1,
             "maxLength": 100
@@ -3971,8 +4018,7 @@
           },
           "name": {
             "type": "string",
-            "pattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "description": "The product name. Must start with a letter or underscore and can only contain letters, numbers, hyphens, and underscores.",
+            "description": "The product name.",
             "example": "Music",
             "minLength": 1,
             "maxLength": 100

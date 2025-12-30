@@ -16,6 +16,8 @@ Chaching serves two main user groups:
 * **Business / Admin Users** – manage products, pricing, subscriptions, customers, and see payment activity.
 * **Developers** – integrate backend systems with Chaching through REST APIs to automate billing workflows.
 
+---
+
 ## System Overview
 
 Chaching includes two primary components:

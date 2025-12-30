@@ -2,7 +2,7 @@
 
 When viewing a customer's profile, you can add a new payment method.
 {% img src="./images/image 5.png" alt="image 5.png" withLightbox=true width="" height="" /%}
-
+---
 ## Payment Method Form
 
 | **Field / Element** | **Description** | **Required / Optional** |
@@ -11,7 +11,7 @@ When viewing a customer's profile, you can add a new payment method.
 | **MM/YY** | Card expiration month and year. | Required |
 | **CVC** | Card security code. | Required |
 | **Save with Link** | Checkbox that stores the card using Link | Optional |
-
+---
 ## Billing Details
 
 *(Shown when “Show advanced option” is selected)*
@@ -26,7 +26,7 @@ When viewing a customer's profile, you can add a new payment method.
 | **City** | Customer’s billing city. | Optional |
 | **State** | Billing state or province. | Optional |
 | **Zip** | Postal/ZIP code. | Optional |
-
+---
 ## Add Payment Method Button
 
 Saves and attaches the new payment method to the customer profile using the provided details.

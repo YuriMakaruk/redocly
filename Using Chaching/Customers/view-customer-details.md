@@ -2,7 +2,7 @@
 
 {% img src="./images/view.png" alt="view.png" withLightbox=true width="" height="" /%}
 When you select **View details** on a customer row, you are taken to the **Customer Details** page. This page displays all available information about the selected customer, including subscriptions, payments, payment methods, invoices, and profile details.
-
+---
 ## Header Actions
 
 | **Element** | **Description** |
@@ -11,7 +11,7 @@ When you select **View details** on a customer row, you are taken to the **Custo
 | **Delete** | Permanently deletes the customer from your workspace. |
 | **Edit customer** | Opens the customer editor where you can update contact, billing, or shipping details. |
 | **Email** | The customer’s primary email address. |
-
+---
 ## Details
 
 Displays core metadata for the customer.
@@ -23,11 +23,11 @@ Displays core metadata for the customer.
 | **Billing email** | `email@gmail.com` | Email used for billing communication. |
 | **Billing details** | `2399 Michael Islands Apt. 996, +38010663795388` | Address and phone number entered during customer creation. |
 | **Shipping details** | `2399 Michael Islands Apt. 996, +38010663795388` | Shipping address and phone number. |
-
+---
 ## Spending Trend
 
 Shows the historical graphs once payments exist.
-
+---
 ## Subscriptions
 
 Displays all subscriptions associated with this customer.
@@ -42,7 +42,7 @@ Displays all subscriptions associated with this customer.
 | **Created** | Date when the subscription began. |
 | **Renewal** | Next scheduled billing date. |
 | Menu | Click to be redirected to subscription and customer details |
-
+---
 ## Payments
 
 Shows all payments made by the customer.
@@ -53,7 +53,7 @@ Shows all payments made by the customer.
 | **Status** | Payment state (paid, failed, refunded, pending). |
 | **Payment method** | Card or bank account used for payment. |
 | **Date** | When the payment occurred. |
-
+---
 ## Payment Method
 {% img src="./images/image 4.png" alt="image 4.png" withLightbox=true width="" height="" /%}
 
@@ -66,7 +66,7 @@ Shows all payments made by the customer.
 Note: This option is available if at least two cards have been added |
 | Payment method menu | Delete payment method
 Note: This option is available if at least two cards have been added |
-
+---
 ## Invoices
 
 Shows all invoices issued for the customer.

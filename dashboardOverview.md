@@ -7,12 +7,12 @@ After the tenant activation, you will be automatically redirected to your **ChaC
 - Check **Customers** to verify all imported records
 - Create a **subscription**, **invoice**, or **payment**
 - Visit **Settings** to issue API keys or adjust branding
-
+---
 # Dashboard Layout Overview
 
 The dashboard opens on the **Home** section. The interface includes a left-hand navigation panel, a top action bar, and a set of real-time metrics that summarize your business performance.
 {% img src="./images/home.png" alt="home.png" withLightbox=true width="" height="" /%}
-
+---
 # Left Navigation Menu
 
 The left sidebar helps you quickly access every part of your tenant:
@@ -65,7 +65,7 @@ The left sidebar helps you quickly access every part of your tenant:
     
     Safely log out of your tenant.
     
-
+---
 # Home Dashboard Overview
 
 The **Home** section is designed to give you an immediate, at-a-glance understanding of your business performance.
@@ -88,13 +88,15 @@ The **Home** section is designed to give you an immediate, at-a-glance understan
     - Year to date
     - All time
     
-
+---
 # Overview Metrics
 
 ## Monthly Recurring Revenue (MRR)
 
 Shows your current MRR and 30-day growth.
 
+
+---
 # Subscription Metrics
 
 Shows subscription activity within the selected time period, including:
@@ -106,7 +108,7 @@ Shows subscription activity within the selected time period, including:
 | **Churned subscriptions** | Subscriptions cancelled during the selected period |
 
 These sections help you quickly understand changes in your subscriber base.
-
+---
 # Charts & Financial Performance
 
 **Your charts** section visualizes billing activity for the selected date range.

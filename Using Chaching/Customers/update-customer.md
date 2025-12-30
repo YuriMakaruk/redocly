@@ -12,7 +12,7 @@ To update an existing customer, **the user must follow these navigation steps**:
 This opens the full customer-editing form.
 
 The **Edit Customer** page allows business users to update customer profile information, billing data, and shipping details.
-
+---
 ## Customer Details
 
 | **Field / Element** | **Description** |
@@ -20,7 +20,7 @@ The **Edit Customer** page allows business users to update customer profile info
 | **Customer Name** | The customer’s full name displayed in records. |
 | **Email** | Primary customer email used for receipts, login, and notifications. |
 | **Show advanced option** | Expands the form to include Billing and Shipping details. |
-
+---
 ## Billing Details
 
 | **Field / Element** | **Description** |
@@ -33,7 +33,7 @@ The **Edit Customer** page allows business users to update customer profile info
 | **City** | Billing city. |
 | **State** | Billing state or region. |
 | **Zip** | Postal/ZIP code. |
-
+---
 ## Shipping Details
 
 | **Field / Element** | **Description** | **Required / Optional** |

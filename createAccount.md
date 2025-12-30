@@ -5,7 +5,7 @@
 Chaching supports multiple Live and Sandbox accounts. Each account is fully isolated and has its own Stripe integration, customers, subscriptions, products, invoices, and billing data.
 
 There is **no limit** to the number of accounts you can create.
-
+---
 ## When to Add a New Account
 
 You should create a new account if you need to:
@@ -15,7 +15,7 @@ You should create a new account if you need to:
 * Operate **multiple brands or business units**
 * Manage **client accounts** (agency or reseller model)
 
-
+---
 ## How to Add a New Account
 
 1. Go to **Your Account**
@@ -33,13 +33,13 @@ You should create a new account if you need to:
 
 The full step-by-step onboarding process (account details, Stripe connection, migration, bank setup) is described in [User Registration & Onboarding Guide](./onboarding.md).
 
-
+---
 ## Sandbox vs Live Accounts
 
 * Sandbox accounts follow the same onboarding steps
 * Once completed, the Dashboard clearly shows **Test Mode**
 * Sandbox and live accounts are fully isolated
-
+---
 ## Note
 
 **Incomplete setup deletes the account**
@@ -52,7 +52,7 @@ The full step-by-step onboarding process (account details, Stripe connection, mi
 
 * You can create **unlimited accounts**
 * Each account requires its own valid Stripe credentials
-
+---
 ## Switching Between Accounts
 
 Use the **Account Selector** to switch accounts.
@@ -67,7 +67,7 @@ What stays the same:
 * Your user profile
 * Login credentials
 * Personal settings
-
+---
 ## Data Isolation
 
 Each account is completely isolated:

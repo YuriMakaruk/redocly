@@ -1,7 +1,7 @@
 # Company and Branding
 
 The **Company and Branding** page allows workspace administrators to manage company identity and visual branding used across customer-facing pages and communications.
-
+---
 ## Company Information
 
 This section displays the current company name associated with the workspace.
@@ -9,7 +9,7 @@ This section displays the current company name associated with the workspace.
 | **Field** | **Description** |
 | --- | --- |
 | **Company Name** | The legal or display name of your company shown in the dashboard and customer-facing interfaces. |
-
+---
 ## Branding
 
 The **Branding** section controls the visual appearance of ChaChing pages that are visible to your customers, such as invoices and payment pages.

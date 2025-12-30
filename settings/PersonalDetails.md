@@ -1,7 +1,7 @@
 # Personal Details
 
 The **Personal Details** page allows you to manage your individual account information, security settings, and active login sessions.
-
+---
 ## Profile Details
 
 This section displays your core account information and provides options to update it.
@@ -40,7 +40,7 @@ The **Language** field controls the UI language for your ChaChing dashboard.
 - English (US)
 
 You can change the language at any time without affecting other users in the workspace (Chaching currently supports English only.).
-
+---
 ## Login Sessions
 
 This section shows your recent and active login sessions for security visibility.

@@ -1,7 +1,7 @@
 # Transactions
 
 When the user clicks **Transactions** in the left navigation panel, the system displays filtering options and a results table showing all payment transactions.
-
+---
 ## Filter Tabs
 
 | **Tab** | **Description** |
@@ -10,7 +10,7 @@ When the user clicks **Transactions** in the left navigation panel, the system d
 | **Succeeded** | Filters to only successful transactions. |
 | **Refunded** | Filters to only refunded transactions. |
 | **Failed** | Filters to only failed transactions. |
-
+---
 ## Additional Filters
 
 ### Status Filter
@@ -42,7 +42,7 @@ When the user clicks **Transactions** in the left navigation panel, the system d
 | **Amount condition** | Dropdown with: *Is equal to, Between, Greater than, Less than*. |
 | **Dynamic input fields** | Numeric field(s) that adjust depending on selected condition. |
 | **Apply button** | Applies the amount-based filter to the table. |
-
+---
 ## Export Options
 
 Exports the transactions list. When filters are applied, exports only selected transactions. 
@@ -51,7 +51,7 @@ Exports the transactions list. When filters are applied, exports only selected t
 | --- | --- |
 | **CSV** | Exports all currently filtered transactions as a CSV file. |
 | **XLSX** | Exports the data as an Excel spreadsheet. |
-
+---
 ## Transactions Table
 
 Displayed below the filters.

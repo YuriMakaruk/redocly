@@ -5,7 +5,7 @@ When the user clicks **View Subscription** from the three-dot menu in the subscr
 This view provides full information about the selected subscription, customer context, pricing, invoices, and upcoming billing.
 
 When the user clicks **View Customer** from the three-dot menu in the subscription list, a **Customer Details** window opens. For details, refer to [View Customer Details](../Customers/view-customer-details.md).
-
+---
 ## 1. Header Actions
 
 At the top of the page, the subscription name and status are displayed, along with available actions.
@@ -18,7 +18,7 @@ At the top of the page, the subscription name and status are displayed, along wi
 | **Edit** | Allows editing subscription settings and billing details.  |
 | **Pause** | Temporarily pauses the subscription.  |
 | **Cancel** | Cancels the subscription going forward. |
-
+---
 ## 2. Summary Cards
 
 Below the header, four summary boxes provide quick reference data.
@@ -29,7 +29,7 @@ Below the header, four summary boxes provide quick reference data.
 | **Next Invoice** | Shows the amount and upcoming billing date. Example: **$9.00 on 20 Dec, 2025**. |
 | **Customer** | Displays customer name and email linked to the subscription. |
 | **Total Invoices** | Total number of invoices generated for this subscription.  |
-
+---
 ## 3. Subscription Details Section
 
 This section contains the subscription’s full metadata and lifecycle information.
@@ -45,19 +45,19 @@ This section contains the subscription’s full metadata and lifecycle informati
 | **Trial Until** | Displays trial end date or **N/A** if no trial. |
 | **Billing Method** | Indicates how the user is charged (e.g., *Charge default payment method*). |
 | **Tax Calculation** | Shows whether tax is *manual* or automated (and linked system if applicable). |
-
+---
 ## 4. Pricing Section
 
 Displays the subscription’s product pricing configuration.
-
+---
 ## 5. Upcoming Invoice Preview
 
 Shows the upcoming billing cycle and all line items that will be included.
-
+---
 ## 6. Tax Calculation Preview
 
 If configured, ChaChing displays the tax calculation applied to the upcoming invoice.
-
+---
 ## 7. Invoice History
 
 All past invoices generated for this subscription are shown here.

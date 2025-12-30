@@ -1,7 +1,7 @@
 # Users
 
 The **Users** section allows account owners and administrators to manage team members, assign roles, and control access permissions within the ChaChing dashboard.
-
+---
 ## Users Management
 
 ### Filters
@@ -22,7 +22,7 @@ Users can be filtered using the following criteria:
 | **Email** | Email address associated with the user account. |
 | **Roles** | Assigned role (Owner, Admin, Developer, Support Agent). |
 | **Last login** | Date and time of the user’s most recent login. |
-
+---
 ## Add User
 
 To add a new user to your ChaChing account:

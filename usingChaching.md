@@ -6,7 +6,7 @@
 - Import customers (CSV or API)
 - Update customer info
 - Delete/deactivate customers
-
+---
 ## Products & Plans
 
 - Create a product
@@ -15,7 +15,7 @@
 - Add trial periods
 - Add metered pricing (if supported)
 - Pricing upgrades/downgrades rules
-
+---
 ## Subscriptions
 
 - Create new subscription
@@ -26,7 +26,7 @@
 - Reactivate subscription
 - Change plan
 - Add-ons / additional charges (if supported)
-
+---
 ## Payments
 
 - How payments are processed in CC
@@ -35,7 +35,7 @@
 - Retry logic
 - Refund a payment
 - Disputes / chargebacks
-
+---
 ## Invoices
 
 - View invoices

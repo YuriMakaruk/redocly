@@ -1,7 +1,7 @@
 # View invoices details
 
 When you click **View Details** from the Invoices table, you are redirected to the full **Invoice Details** page. This page provides a complete view of the invoice, including payment attempts, customer information, pricing details, tax calculations, and activity history.
-
+---
 ## Header
 
 | **Field** | **Description** |
@@ -10,7 +10,7 @@ When you click **View Details** from the Invoices table, you are redirected to t
 | **Status** | Current invoice status (e.g., *open*, *paid*, *void*, *draft*). |
 | **Charge customer** | Button that triggers an immediate payment attempt using the customer’s default payment method. |
 
-
+---
 ## Charge Customer
 
 When the user clicks **Charge customer** at the top of the Invoice Details panel, a modal window opens with the following elements:
@@ -34,7 +34,7 @@ A section showing the customer’s payment methods that can be selected from the
 ### Action Button
 
 **Click the button to charge** the invoice amount.  After submission, the modal closes and activity updates appear in the “Recent activity” section.
-
+---
 ## Recent Activity
 
 Displays system-generated events showing how the invoice progressed.
@@ -46,7 +46,7 @@ Displays system-generated events showing how the invoice progressed.
 | **Payment failure messages** | Shows failed payment attempts and the associated error messages (e.g., *Amount must be at least $0.50 USD*). |
 | **Invoice creation & finalization** | Logs timestamps when the invoice was created, finalized, and marked open. |
 | **Timestamps** | Each entry includes the exact date and time of the event. |
-
+---
 ## Invoice Details
 
 ![image.png](image%206.png)
@@ -57,7 +57,7 @@ Displays system-generated events showing how the invoice progressed.
 | **Created** | The date the invoice was generated. |
 | **Finalised** | The date the invoice was finalized and made payable. |
 | **Connect subscription** | Shows the subscription associated with this invoice (if applicable). |
-
+---
 ## Summary Section
 
 ![image.png](image%207.png)
@@ -70,7 +70,7 @@ Displays system-generated events showing how the invoice progressed.
 | **Shipping details** | Customer’s shipping address (if provided). |
 | **Billing method** | How payments are charged (e.g., *Charge default payment method*). |
 | **Tax calculation** | Indicates whether tax is calculated manually or automatically. |
-
+---
 ## Payments
 
 Table showing all payments attempts for this invoice.
@@ -98,7 +98,7 @@ Clicking the three dots in a payment row opens a detailed payment timeline.
 | **Customer** | Customer associated with the payment. |
 | **Payment ID** | Unique identifier for this payment attempt. |
 | **Payment method** | Details of the payment method used (e.g., *Visa •••• 4242*). |
-
+---
 ## Pricing
 
 ![image.png](image%208.png)
@@ -114,7 +114,7 @@ Clicking the three dots in a payment row opens a detailed payment timeline.
 | **Sales tax** | Calculated tax amount. Shows: tax rate, tax basis, and resulting value. Example: *(4.00% inclusive on $9.62) = $0.38*. |
 | **Total** | Full invoice amount including all taxes. |
 | **Amount due** | Remaining amount the customer owes after previous payments or adjustments. |
-
+---
 ## Tax Calculation
 
 A preview of the tax configuration applied to this invoice.

@@ -1,13 +1,13 @@
 # Role Permissions Matrix
 
-### Available Roles
+## Available Roles
 
 - **Owner**
 - **Admin**
 - **Developer**
 - **Support Agent**
 
-### Role Permissions Matrix
+## Role Permissions Matrix
 
 | **Feature / Area** | **Owner** | **Admin** | **Developer** | **Support Agent** |
 | --- | --- | --- | --- | --- |

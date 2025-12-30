@@ -1,7 +1,7 @@
 # Developer Settings
 
 The **Developer Settings** page allows developers to manage API access credentials and configure event-driven integrations.
-
+---
 ## API Keys
 
 This section provides access to standard API keys used to authenticate requests to the ChaChing API.
@@ -24,7 +24,7 @@ This section provides access to standard API keys used to authenticate requests 
 - The **Secret key** must never be exposed in client-side code.
 - If a secret key is compromised, it should be rotated immediately.
 - Access to API keys should be restricted to authorized users only.
-
+---
 ## Webhooks
 
 ### Important Notes

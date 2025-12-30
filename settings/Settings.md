@@ -3,7 +3,7 @@
 The **Settings** section allows you to manage your company information, account preferences, billing, and developer configuration. Settings are grouped into **Company** and **Account** categories for easier navigation. 
 
 The options displayed on the Settings page depend on the role assigned to the user.
-
+---
 ## Company Settings
 
 ### Personal Details
@@ -25,7 +25,7 @@ This section controls how your company appears across ChaChing’s customer-faci
 - Update company information
 - Upload or change your company logo
 - Configure brand colors used in checkout and invoices
-
+---
 ## Account Settings
 
 ### Invoices & Subscriptions
@@ -67,7 +67,7 @@ This section is intended for technical users integrating ChaChing into their sys
 - Generate and manage API keys
 - Configure webhooks
 - Access developer-related tools and settings
-
+---
 ## Workspace Management
 
 ### Delete Workspace

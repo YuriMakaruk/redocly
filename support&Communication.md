@@ -1,7 +1,7 @@
 # Support & Communication
 
 This section explains how to get help, find answers, and communicate with the ChaChing team.
-
+---
 ## Documentation
 
 The ChaChing documentation is the primary source of guidance for both business users and developers.
@@ -15,7 +15,7 @@ Use the documentation to:
 
 Documentation is continuously updated as new features are released.
 
-
+---
 ## Contact Support (Email)
 
 If you need direct assistance or encounter an issue that cannot be resolved through documentation, you can contact the ChaChing support team via email.
@@ -39,7 +39,7 @@ Use email support for:
 
 This helps the support team investigate and respond faster.
 
-
+---
 ## Frequently Asked Questions (FAQ)
 
 ### Getting Started & Onboarding

@@ -1,14 +1,14 @@
 # Products
 
 The **Products** section allows you to manage billable items, define pricing models, and configure tax behavior for subscriptions and one-time charges.
-
+---
 ## Filter Tabs
 
 | **Tab** | **Description** |
 | --- | --- |
 | **All products** | Displays all products regardless of tax configuration. |
 | **Tax Rates** | Displays products grouped or filtered by tax-related settings. |
-
+---
 ## Additional Filters
 
 ### Created Filter
@@ -25,7 +25,7 @@ The **Products** section allows you to manage billable items, define pricing mod
 | --- | --- |
 | **Tax category selector** | Dropdown list of available tax categories. |
 | **Apply button** | Filters products by the selected tax category. |
-
+---
 ## Create New Product
 
 ### Create New Product Button
@@ -48,7 +48,7 @@ Opens a side panel to define a new product and its billing configuration.
 | **Include tax in price** | Determines whether tax is included in the displayed price. | Required |
 | **Billing period** | Billing frequency for recurring products (e.g., monthly). | Required (Recurring only) |
 | **Create product** | Saves the product and makes it available for pricing and subscriptions. | — |
-
+---
 ## Products Table
 {% img src="./ProductsTable.png" alt="ProductsTable.png" withLightbox=true width="" height="" /%}
 | **Column** | **Description** |

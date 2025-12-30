@@ -5,7 +5,7 @@ The **Subscriptions** section in the left navigation panel allows business users
 When you click **Subscriptions**, you will see a filter panel and a subscription table listing all relevant subscription data.
 
 ![image.png](image.png)
-
+---
 ## Status Filters
 
 The top row of filters allows you to quickly filter subscriptions by lifecycle state.
@@ -19,7 +19,7 @@ The top row of filters allows you to quickly filter subscriptions by lifecycle s
 | **Paused** | Shows subscriptions temporarily paused. |
 | **Expired** | Shows subscriptions that reached their end date and expired. |
 | **All** | Displays all subscriptions regardless of status. |
-
+---
 ## Additional Filters
 
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
@@ -63,7 +63,7 @@ An **Apply** button narrows down the subscription list.
 Each option displays input fields dynamically based on the selection.
 
 An **Apply** button narrows down the subscription list.
-
+---
 ## Subscription Table
 
 Below the filters, all matching subscriptions are displayed in a table.
@@ -79,7 +79,7 @@ Below the filters, all matching subscriptions are displayed in a table.
 | **Tax** | Tax amount associated with the subscription. |
 | **Created** | Date the subscription was created. |
 | **Renewal** | Next charge or renewal date. |
-
+---
 ## Row Actions
 
 Each subscription row includes a **menu** on the right side.

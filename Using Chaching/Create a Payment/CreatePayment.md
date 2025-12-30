@@ -1,7 +1,7 @@
 # Create a Payment
 
 ChaChing allows you to create one-off payments manually from the dashboard. This is useful for charging customers outside of subscriptions, collecting ad-hoc fees, or retrying payments.
-
+---
 ## How to Create a Payment
 
 1. In the ChaChing dashboard, locate the **Create** button in the **top-right corner**.
@@ -10,7 +10,7 @@ ChaChing allows you to create one-off payments manually from the dashboard. This
 3. The **Create a payment** form opens.
 
 ![image.png](image.png)
-
+---
 ## Create Payment Form Fields
 
 | **Field** | **Description** | **Required / Optional** |
@@ -19,7 +19,7 @@ ChaChing allows you to create one-off payments manually from the dashboard. This
 | **Customer** | Select an existing customer from the list. | Required |
 | **Description** | Optional internal note describing the payment purpose. Appears in payment details and invoices. | Optional |
 | **Payment method** | Select how the payment will be collected. | Required |
-
+---
 ## Payment Method Options
 
 You can choose one of the following payment methods:
@@ -36,7 +36,7 @@ You can choose one of the following payment methods:
     
     Sends a secure payment link to the customer so they can complete the payment themselves.
     
-
+---
 ## Complete the Payment
 
 1. Review the entered information.

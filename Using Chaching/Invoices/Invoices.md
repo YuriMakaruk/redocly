@@ -1,7 +1,7 @@
 # Invoices
 
 The **Invoices** section lists all invoices generated for your customers, including their status, billing amounts, due dates, and customer details. You can filter, search, and export invoice data, as well as open individual invoices for a detailed view.
-
+---
 ## Filter Tabs
 
 Located at the top of the Invoices page.
@@ -13,7 +13,7 @@ Located at the top of the Invoices page.
 | **Open** | Displays invoices that have been issued but are still unpaid. |
 | **Void** | Shows invoices that have been voided and are no longer valid. |
 | **Paid** | Lists all invoices that have been successfully paid. |
-
+---
 ## Additional Filters
 
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
@@ -66,7 +66,7 @@ An **Apply** button narrows down the invoices list.
 Each option displays input fields dynamically based on the selection.
 
 An **Apply** button narrows down the invoices list.
-
+---
 ## Export Options
 {% img src="./export.png" alt="export.png" withLightbox=true width="" height="" /%}
 Exports the invoices list. When filters are applied, exports only selected invoices.  
@@ -75,7 +75,7 @@ Exports the invoices list. When filters are applied, exports only selected invoi
 | --- | --- |
 | **CSV** | Exports all currently filtered invoice data as a CSV file. |
 | **XLSX** | Exports the data as an Excel spreadsheet. |
-
+---
 ## Invoices Table
 
 Displays the list of all invoices matching the applied filters.

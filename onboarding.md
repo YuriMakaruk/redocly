@@ -26,7 +26,7 @@ When you complete the onboarding flow and approve the migration, ChaChing automa
 5. **Your historical Stripe data remains intact.**
     
     Nothing is deleted from your Stripe dashboard—your past information stays available for safe keeping and audit purposes.
-
+---
 # Prerequisites
 Before onboarding into Chaching, the user must create the following:
 
@@ -34,7 +34,7 @@ Before onboarding into Chaching, the user must create the following:
 | --- | --- |
 | **Email account** | Required to verify your email and receive the verification link for Step 1. |
 | **Stripe account** | Required if you plan to migrate existing subscriptions from Stripe. |
-
+---
 # Account Creation
 
 ## The Sign-Up Flow
@@ -57,7 +57,7 @@ You will be prompted to verify your email.
 
 Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
 {% img src="./images/onboard.png" alt="onboard.png" withLightbox=true width="" height="" /%}
-
+---
 # Onboarding Flow
 
 The complete onboarding flow consists of:

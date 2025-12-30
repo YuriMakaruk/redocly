@@ -7,7 +7,7 @@ It is designed for developers building billing flows similar to Stripe, but with
 - **Base URL**: `https://api.chaching.io/v1/`
 - **Format**: JSON over HTTPS
 - **Versioning**: Current version: `v1`
-
+---
 # Authentication
 
 Chaching API uses **Bearer tokens** for authentication.

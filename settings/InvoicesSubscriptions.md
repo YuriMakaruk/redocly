@@ -1,7 +1,7 @@
 # Invoices & Subscriptions
 
 The **Invoices & Subscriptions** settings page allows administrators to configure how failed payments are handled for subscriptions and invoices, as well as customize default content shown on invoice payment pages.
-
+---
 ## Manage Failed Payments
 
 This section defines automated retry behavior and actions taken when payments fail.
@@ -30,7 +30,7 @@ You can configure multiple retry attempts for failed payments. Each retry is sch
 | **Minus (–) icon** | Removes the corresponding retry attempt from the list. |
 
 Retries are executed sequentially in the order shown.
-
+---
 ## Actions After All Retries Fail
 
 These settings determine what happens after all configured retry attempts have been exhausted.
@@ -53,7 +53,7 @@ If all retries for an **invoice payment** fail, one of the following actions can
 | --- | --- |
 | **Mark the invoice as uncollectible** | Flags the invoice as uncollectible and stops further attempts. |
 | **Leave the invoice past due** | Leaves the invoice open and past due for manual follow-up. |
-
+---
 ## Invoice Payment Page Content
 
 This section allows customization of default text shown on invoice payment pages.
@@ -64,13 +64,13 @@ This section allows customization of default text shown on invoice payment pages
 | **Default footer** | A default footer message displayed at the bottom of invoices. |
 
 These values can typically be overridden on individual invoices.
-
+---
 ## Actions
 
 | **Action** | **Description** |
 | --- | --- |
 | **Save changes** | Applies all updates to retry rules and invoice content settings. |
-
+---
 ## Notes
 
 - Retry schedules apply to both subscription and invoice payments unless otherwise specified.

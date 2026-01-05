@@ -4,7 +4,7 @@ The **Subscriptions** section in the left navigation panel allows business users
 
 When you click **Subscriptions**, you will see a filter panel and a subscription table listing all relevant subscription data.
 
-![image.png](image.png)
+{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
 ---
 ## Status Filters
 
@@ -25,8 +25,7 @@ The top row of filters allows you to quickly filter subscriptions by lifecycle s
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
 
 ### Customer Filter
-
-![image.png](image%201.png)
+{% img src="./image 1.png" alt="image 1.png" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -34,8 +33,7 @@ Below the status filters, a set of advanced filters is shown. Each filter has it
 | **Apply** | Applies the customer filter to narrow down the subscription list. |
 
 ### Amount Filter
-
-![image.png](image%202.png)
+{% img src="./image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -49,8 +47,7 @@ Each option displays input fields dynamically based on the selection.
 An **Apply** button narrows down the subscription list.
 
 ### Date Created Filter
-
-![image.png](image%203.png)
+{% img src="./image 3.png" alt="image 3.png" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -84,7 +81,7 @@ Below the filters, all matching subscriptions are displayed in a table.
 
 Each subscription row includes a **menu** on the right side.
 
-![image.png](image%204.png)
+{% img src="./image 4.png" alt="image 4.png" withLightbox=true width="" height="" /%}
 
 When clicked, the menu provides:
 

@@ -8,8 +8,7 @@ ChaChing allows you to create one-off payments manually from the dashboard. This
    {% img src="./create.png" alt="create.png" withLightbox=true width="" height="" /%}
 2. Click **Create** and select **Create payment**.
 3. The **Create a payment** form opens.
-
-![image.png](image.png)
+{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
 ---
 ## Create Payment Form Fields
 

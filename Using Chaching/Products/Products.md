@@ -31,8 +31,7 @@ The **Products** section allows you to manage billable items, define pricing mod
 ### Create New Product Button
 
 Opens a side panel to define a new product and its billing configuration.
-
-![image.png](image.png)
+{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
 
 ### Product Details
 
@@ -50,7 +49,9 @@ Opens a side panel to define a new product and its billing configuration.
 | **Create product** | Saves the product and makes it available for pricing and subscriptions. | — |
 ---
 ## Products Table
-{% img src="./ProductsTable.png" alt="ProductsTable.png" withLightbox=true width="" height="" /%}
+
+{% img src="./ProductsTable.svg" alt="ProductsTable.svg" withLightbox=true width="" height="" /%}
+
 | **Column** | **Description** |
 | --- | --- |
 | **Product Name** | Name of the product. |
@@ -63,8 +64,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 {% img src="./ProductDetails.png" alt="ProductDetails.png" withLightbox=true width="" height="" /%}
 
 ### Product Details Page
-
-![image.png](image%202.png)
+{% img src="./image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
 
 #### Header
 

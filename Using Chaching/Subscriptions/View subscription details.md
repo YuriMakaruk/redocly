@@ -9,8 +9,7 @@ When the user clicks **View Customer** from the three-dot menu in the subscripti
 ## 1. Header Actions
 
 At the top of the page, the subscription name and status are displayed, along with available actions.
-
-![image.png](image%205.png)
+{% img src="./image 5.png" alt="image 5.png" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -33,8 +32,7 @@ Below the header, four summary boxes provide quick reference data.
 ## 3. Subscription Details Section
 
 This section contains the subscription’s full metadata and lifecycle information.
-
-![image.png](image%206.png)
+{% img src="./image 6.png" alt="image 6.png" withLightbox=true width="" height="" /%}
 
 | **Field** | **Description** |
 | --- | --- |
@@ -61,8 +59,7 @@ If configured, ChaChing displays the tax calculation applied to the upcoming inv
 ## 7. Invoice History
 
 All past invoices generated for this subscription are shown here.
-
-![image.png](image%207.png)
+{% img src="./image 7.png" alt="image 7.png" withLightbox=true width="" height="" /%}
 
 | **Field** | **Description** |
 | --- | --- |

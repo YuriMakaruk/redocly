@@ -70,7 +70,7 @@ Displayed below the filters.
 
 Clicking the three dots in a transactions row opens transactions details.
 
-![image.png](image.png)
+{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
 
 Here’s an updated and clearer version of the section, aligned exactly with what the UI shows in your example:
 

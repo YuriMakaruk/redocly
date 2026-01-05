@@ -1,2 +1,13 @@
 logo:
   image: images/logo.svg
+
+navbar:
+  items:
+    - page: index.md
+      label: Home
+    - page: ./onboarding.md
+      label: Getting Started
+    - page: ./Developer Guide/api.json
+      label: API Reference
+    - page: ./support&Communication.md
+      label: Support

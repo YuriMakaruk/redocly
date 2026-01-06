@@ -3,7 +3,7 @@
 Use this workflow to manually create a customer record in ChaChing. This is useful when you need to add a customer individually instead of importing via API.
 
 Click **Add new customer** to create a customer.
-{% img src="./images/image 1.png" alt="image 1.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Customers-2.svg" alt="Customers-2.svg" withLightbox=true width="" height="" /%}
 ---
 ## Customer Details
 
@@ -40,6 +40,8 @@ Click **Add new customer** to create a customer.
 ---
 ## Complete the Action
 
+### Complete the Action
+
 Click **Add customer** to create the customer using the provided details.
 
-{% img src="./images/image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Add new customer.svg" alt="Add new customer.svg" withLightbox=true width="" height="" /%}

@@ -1,6 +1,7 @@
 # View Customer Details
 
-{% img src="./images/view.png" alt="view.png" withLightbox=true width="" height="" /%}
+# Customer Details View
+{% img src="./images/Customers-1.svg" alt="Customers-1.svg" withLightbox=true width="" height="" /%}
 When you select **View details** on a customer row, you are taken to the **Customer Details** page. This page displays all available information about the selected customer, including subscriptions, payments, payment methods, invoices, and profile details.
 ---
 ## Header Actions
@@ -31,8 +32,8 @@ Shows the historical graphs once payments exist.
 ## Subscriptions
 
 Displays all subscriptions associated with this customer.
+{% img src="./images/Subscriptions - View details.svg" alt="Subscriptions - View details.svg" withLightbox=true width="" height="" /%}
 
-{% img src="./images/image 3.png" alt="image 3.png" withLightbox=true width="" height="" /%}
 
 | **Column** | **Description** |
 | --- | --- |

@@ -1,7 +1,7 @@
 # Add Payment Method
 
 When viewing a customer's profile, you can add a new payment method.
-{% img src="./images/image 5.png" alt="image 5.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Customer details - Add payment methods.svg" alt="Customer details - Add payment methods.svg" withLightbox=true width="" height="" /%}
 ---
 ## Payment Method Form
 

@@ -31,7 +31,7 @@ The **Products** section allows you to manage billable items, define pricing mod
 ### Create New Product Button
 
 Opens a side panel to define a new product and its billing configuration.
-{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Create new product.svg" alt="Create new product.svg" withLightbox=true width="" height="" /%}
 
 ### Product Details
 
@@ -49,8 +49,7 @@ Opens a side panel to define a new product and its billing configuration.
 | **Create product** | Saves the product and makes it available for pricing and subscriptions. | — |
 ---
 ## Products Table
-
-{% img src="./ProductsTable.svg" alt="ProductsTable.svg" withLightbox=true width="" height="" /%}
+{% img src="./images/Products.svg" alt="Products.svg" withLightbox=true width="" height="" /%}
 
 | **Column** | **Description** |
 | --- | --- |
@@ -61,12 +60,12 @@ Opens a side panel to define a new product and its billing configuration.
 | **Updated** | Date of last modification. |
 
 Clicking a product name in the table row opens the **Product Details** page.
-{% img src="./ProductDetails.png" alt="ProductDetails.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Products.svg" alt="Products.svg" withLightbox=true width="" height="" /%}
 
-### Product Details Page
-{% img src="./image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
+## Product Details Page
+{% img src="./images/Product details.svg" alt="Product details.svg" withLightbox=true width="" height="" /%}
 
-#### Header
+### Header
 
 | **Element** | **Description** |
 | --- | --- |
@@ -75,7 +74,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Delete** | Permanently deletes the product. |
 | **Edit** | Opens the product for editing. |
 
-#### Pricing Section
+### Pricing Section
 
 | **Field** | **Description** |
 | --- | --- |
@@ -85,7 +84,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Created** | Price creation date. |
 | **Description** | Optional pricing description. |
 
-#### Product Metadata (Details Section)
+### Product Metadata (Details Section)
 
 | **Field** | **Description** |
 | --- | --- |
@@ -94,8 +93,9 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Tax category** | Assigned tax category. |
 | **Product ID** | Unique system identifier for the product. |
 
-#### Create New Pricing
-{% img src="./Createnewpricing.png" alt="Createnewpricing.png" withLightbox=true width="" height="" /%}
+## Create New Pricing
+{% img src="./images/Product details - Create new pricing.svg" alt="Product details - Create new pricing.svg" withLightbox=true width="" height="" /%}
+
 Opens a side panel to add a new price to the product.
 
 | **Name** | **Description** | **Required / Optional** |

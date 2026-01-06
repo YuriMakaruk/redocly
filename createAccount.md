@@ -20,7 +20,7 @@ You should create a new account if you need to:
 
 1. Go to **Your Account**
 2. Select one of the following options:
-{% img src="./images/AddNewAccount.png" alt="AddNewAccount.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Workspace.svg" alt="Workspace.svg" withLightbox=true width="" height="" /%}
   Add a Live Account:
    * Switch to workspace → Add an account
    * Creates a new Live account

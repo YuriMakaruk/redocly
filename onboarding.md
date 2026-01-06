@@ -44,20 +44,16 @@ Before onboarding into Chaching, the user must create the following:
     [**https://dashboard.chaching.io/sign-in**](https://dashboard.chaching.io/sign-in)
     
 2. From the sign-in page, click **Get Started**.
-{% img src="./images/GetStarted.png" alt="GetStarted.png" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Get started.svg" alt="Get started.svg" withLightbox=true width="" height="" /%}
 3. Enter the email address and click **Continue with email**.
-{% img src="./images/Sign-Up.png" alt="Sign-Up.png" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Email.svg" alt="Email.svg" withLightbox=true width="" height="" /%}
 You will be prompted to verify your email.
 {% img src="./images/Sidebar menu.svg" alt="Sidebar menu.svg" withLightbox=true width="" height="" /%}
 
 4. Open the email from Chaching and verify your email address.
-{% img src="./images/email.png" alt="email.png" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Email-1.svg" alt="Email-1.svg" withLightbox=true width="" height="" /%}
 Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
-{% img src="./images/onboard.png" alt="onboard.png" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Land.svg" alt="Land.svg" withLightbox=true width="" height="" /%}
 ---
 # Onboarding Flow
 
@@ -197,8 +193,7 @@ Click **Continue**.
 ## Step 5: Subscription Selection
 
 You will see a table of all subscriptions retrieved from Stripe.
-{% img src="./images/2025-12-09_14-49-59.png" alt="2025-12-09_14-49-59.png" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Subscription.svg" alt="Subscription.svg" withLightbox=true width="" height="" /%}
 Here you can:
 
 - Select all subscriptions
@@ -228,8 +223,7 @@ Click **Continue** when ready.
 
 In this step, ChaChing calculates your expected monthly savings compared to Stripe.
 
-{% img src="./images/General Details.svg" alt="General Details.svg" withLightbox=true width="" height="" /%}
-
+{% img src="./images/Savings.svg" alt="Savings.svg" withLightbox=true width="" height="" /%}
 You’ll see a comparison of Stripe’s 0.7% fee vs ChaChing’s 0.35% fee
 
 Below the savings section, you’ll be asked to connect your bank account.

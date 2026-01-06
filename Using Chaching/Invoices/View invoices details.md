@@ -24,7 +24,7 @@ When the user clicks **Charge customer** at the top of the Invoice Details panel
 
 A section showing the customer’s payment methods that can be selected from the drop-down menu.
 
-![image.png](image%204.png)
+{% img src="./Charge customer for invoice.svg" alt="Charge customer for invoice.svg" withLightbox=true width="" height="" /%}
 
 ### Internal Note
 
@@ -38,8 +38,7 @@ A section showing the customer’s payment methods that can be selected from the
 ## Recent Activity
 
 Displays system-generated events showing how the invoice progressed.
-
-![image.png](image%205.png)
+{% img src="./Subscription details - Recent activity.svg" alt="Subscription details - Recent activity.svg" withLightbox=true width="" height="" /%}
 
 | **Activity** | **Description** |
 | --- | --- |
@@ -48,8 +47,7 @@ Displays system-generated events showing how the invoice progressed.
 | **Timestamps** | Each entry includes the exact date and time of the event. |
 ---
 ## Invoice Details
-
-![image.png](image%206.png)
+{% img src="./Subscription details - Details.svg" alt="Subscription details - Details.svg" withLightbox=true width="" height="" /%}
 
 | **Field** | **Description** |
 | --- | --- |
@@ -59,8 +57,8 @@ Displays system-generated events showing how the invoice progressed.
 | **Connect subscription** | Shows the subscription associated with this invoice (if applicable). |
 ---
 ## Summary Section
+{% img src="./images/Subscription details - Summary.svg" alt="Subscription details - Summary.svg" withLightbox=true width="" height="" /%}
 
-![image.png](image%207.png)
 
 | **Field** | **Description** |
 | --- | --- |

@@ -19,7 +19,7 @@ Located at the top of the Invoices page.
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
 
 ### Status Filter
-{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Invoices - Status.svg" alt="Invoices - Status.svg" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -27,7 +27,8 @@ Below the status filters, a set of advanced filters is shown. Each filter has it
 | **Apply** | Applies the selected status filters to the invoice list. |
 
 ### Customer Filter
-{% img src="./image 1.png" alt="image 1.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Invoices - Customer.svg" alt="Invoices - Customer.svg" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -35,7 +36,7 @@ Below the status filters, a set of advanced filters is shown. Each filter has it
 | **Apply** | Applies the customer filter to narrow down the subscription list. |
 
 ### Amount Filter
-{% img src="./image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Invoices - Amount.svg" alt="Invoices - Amount.svg" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -49,7 +50,7 @@ Each option displays input fields dynamically based on the selection.
 An **Apply** button narrows down the invoices list.
 
 ### Date Created Filter
-{% img src="./image 3.png" alt="image 3.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Invoices - Date created.svg" alt="Invoices - Date created.svg" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -64,7 +65,8 @@ Each option displays input fields dynamically based on the selection.
 An **Apply** button narrows down the invoices list.
 ---
 ## Export Options
-{% img src="./export.png" alt="export.png" withLightbox=true width="" height="" /%}
+{% img src="./Subscription details - Recent activity-1.svg" alt="Subscription details - Recent activity-1.svg" withLightbox=true width="" height="" /%}
+
 Exports the invoices list. When filters are applied, exports only selected invoices.  
 
 | **Format** | **Description** |

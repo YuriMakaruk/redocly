@@ -51,7 +51,7 @@ Exports the transactions list. When filters are applied, exports only selected t
 | --- | --- |
 | **CSV** | Exports all currently filtered transactions as a CSV file. |
 | **XLSX** | Exports the data as an Excel spreadsheet. |
----
+
 ## Transactions Table
 
 Displayed below the filters.
@@ -71,6 +71,47 @@ Displayed below the filters.
 Clicking the three dots in a transactions row opens transactions details.
 
 {% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
+
+Here’s an updated and clearer version of the section, aligned exactly with what the UI shows in your example:
+
+#### **Overview**
+
+Displays the transaction amount and its final status.
+
+| **Field**  | **Description**                                         |
+| ---------- | ------------------------------------------------------- |
+| **Amount** | Total amount of the transaction (e.g., **$317.24**).    |
+| **Status** | Final transaction status (e.g., *Succeeded*, *Failed*). |
+
+#### **Timeline**
+
+Shows the chronological progress of the transaction with timestamps.
+
+| **Event**              | **Description**                                            |
+| ---------------------- | ---------------------------------------------------------- |
+| **Payment started**    | The moment the payment attempt was initiated.              |
+| **Payment authorised** | Confirmation that the payment was successfully authorised. |
+
+#### **Payment Breakdown**
+
+Provides a financial breakdown of the transaction.
+
+| **Field**          | **Description**                           |
+| ------------------ | ----------------------------------------- |
+| **Payment amount** | Original amount charged to the customer.  |
+| **Fee**            | Processing fee deducted from the payment. |
+| **Net amount**     | Amount received after fees are applied.   |
+
+#### **Details**
+
+Contains metadata and identifiers related to the transaction.
+
+| **Field**          | **Description**                                                |
+| ------------------ | -------------------------------------------------------------- |
+| **Last update**    | Date of the most recent status update.                         |
+| **Customer**       | Email address of the customer associated with the transaction. |
+| **Payment ID**     | Unique identifier for this transaction.                        |
+| **Payment method** | Payment method used (e.g., *UnionPay •••• 0005*).              |
 
 Here’s an updated and clearer version of the section, aligned exactly with what the UI shows in your example:
 

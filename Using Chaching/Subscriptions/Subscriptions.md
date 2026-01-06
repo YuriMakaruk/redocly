@@ -3,8 +3,8 @@
 The **Subscriptions** section in the left navigation panel allows business users to view, filter, and manage all subscription records in their ChaChing tenant.
 
 When you click **Subscriptions**, you will see a filter panel and a subscription table listing all relevant subscription data.
+{% img src="./images/Subscriptions - Customer.svg" alt="Subscriptions - Customer.svg" withLightbox=true width="" height="" /%}
 
-{% img src="./image.png" alt="image.png" withLightbox=true width="" height="" /%}
 ---
 ## Status Filters
 
@@ -25,7 +25,8 @@ The top row of filters allows you to quickly filter subscriptions by lifecycle s
 Below the status filters, a set of advanced filters is shown. Each filter has its own input fields and an **Apply** button.
 
 ### Customer Filter
-{% img src="./image 1.png" alt="image 1.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Subscriptions - Customer.svg" alt="Subscriptions - Customer.svg" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -33,7 +34,7 @@ Below the status filters, a set of advanced filters is shown. Each filter has it
 | **Apply** | Applies the customer filter to narrow down the subscription list. |
 
 ### Amount Filter
-{% img src="./image 2.png" alt="image 2.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Subscriptions - Amount.svg" alt="Subscriptions - Amount.svg" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -47,7 +48,8 @@ Each option displays input fields dynamically based on the selection.
 An **Apply** button narrows down the subscription list.
 
 ### Date Created Filter
-{% img src="./image 3.png" alt="image 3.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Subscriptions - Date created.svg" alt="Subscriptions - Date created.svg" withLightbox=true width="" height="" /%}
 
 | **Option** | **Description** |
 | --- | --- |
@@ -80,8 +82,7 @@ Below the filters, all matching subscriptions are displayed in a table.
 ## Row Actions
 
 Each subscription row includes a **menu** on the right side.
-
-{% img src="./image 4.png" alt="image 4.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Subscription details - active.svg" alt="Subscription details - active.svg" withLightbox=true width="" height="" /%}
 
 When clicked, the menu provides:
 

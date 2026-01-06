@@ -7,7 +7,8 @@ To update an existing customer, **the user must follow these navigation steps**:
 3. Click **View details** to open the customer profile.
 4. In the customer profile page, select **Edit customer**.
 
-{% img src="./images/Update.png" alt="Update.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Customer details.svg" alt="Customer details.svg" withLightbox=true width="" height="" /%}
 
 This opens the full customer-editing form.
 

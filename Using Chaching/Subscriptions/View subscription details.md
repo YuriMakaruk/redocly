@@ -1,15 +1,16 @@
 # View subscription details
 
 When the user clicks **View Subscription** from the three-dot menu in the subscription list, a detailed **Subscription Details** window opens.
-{% img src="./viewSubscription.png" alt="viewSubscription.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Subscription details - Recent activity.svg" alt="Subscription details - Recent activity.svg" withLightbox=true width="" height="" /%}
+
 This view provides full information about the selected subscription, customer context, pricing, invoices, and upcoming billing.
 
 When the user clicks **View Customer** from the three-dot menu in the subscription list, a **Customer Details** window opens. For details, refer to [View Customer Details](../Customers/view-customer-details.md).
----
+
 ## 1. Header Actions
 
 At the top of the page, the subscription name and status are displayed, along with available actions.
-{% img src="./image 5.png" alt="image 5.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Subscription details - active.svg" alt="Subscription details - active.svg" withLightbox=true width="" height="" /%}
 
 | **Element** | **Description** |
 | --- | --- |
@@ -32,7 +33,8 @@ Below the header, four summary boxes provide quick reference data.
 ## 3. Subscription Details Section
 
 This section contains the subscription’s full metadata and lifecycle information.
-{% img src="./image 6.png" alt="image 6.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Subscription details - active - Invoice.svg" alt="Subscription details - active - Invoice.svg" withLightbox=true width="" height="" /%}
 
 | **Field** | **Description** |
 | --- | --- |
@@ -59,7 +61,7 @@ If configured, ChaChing displays the tax calculation applied to the upcoming inv
 ## 7. Invoice History
 
 All past invoices generated for this subscription are shown here.
-{% img src="./image 7.png" alt="image 7.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Subscription details - active - Invoice.svg" alt="Subscription details - active - Invoice.svg" withLightbox=true width="" height="" /%}
 
 | **Field** | **Description** |
 | --- | --- |

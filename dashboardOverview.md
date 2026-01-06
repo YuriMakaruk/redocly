@@ -11,7 +11,7 @@ After the tenant activation, you will be automatically redirected to your **ChaC
 # Dashboard Layout Overview
 
 The dashboard opens on the **Home** section. The interface includes a left-hand navigation panel, a top action bar, and a set of real-time metrics that summarize your business performance.
-{% img src="./images/home.png" alt="home.png" withLightbox=true width="" height="" /%}
+{% img src="./images/Frame 2087328084.svg" alt="Frame 2087328084.svg" withLightbox=true width="" height="" /%}
 ---
 # Left Navigation Menu
 

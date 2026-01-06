@@ -93,7 +93,7 @@ Clicking a product name in the table row opens the **Product Details** page.
 | **Tax category** | Assigned tax category. |
 | **Product ID** | Unique system identifier for the product. |
 
-## Create New Pricing
+### Create New Pricing
 {% img src="./images/Product details - Create new pricing.svg" alt="Product details - Create new pricing.svg" withLightbox=true width="" height="" /%}
 
 Opens a side panel to add a new price to the product.

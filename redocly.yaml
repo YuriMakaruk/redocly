@@ -1,5 +1,8 @@
 logo:
-  image: images/logo.svg
+  altText: Chaching logo
+  link: https://chaching.io/
+  srcSet: "./images/logo-light.svg light, ./images/logo-dark.svg dark"
+
 
 navbar:
   items:
@@ -12,4 +15,7 @@ navbar:
     - page: ./support&Communication.md
       label: Support
       
+
+
+
 

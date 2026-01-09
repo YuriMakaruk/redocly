@@ -4,7 +4,7 @@ Use this flow to issue an invoice to a customer and either request payment or au
 ## Step 1: Open Create Invoice
 
 1. In the top-right corner of the dashboard, click **Create**.
-   {% img src="../Create a Payment/create.png" alt="create.png" withLightbox=true width="" height="" /%}
+   {% img src="../Create a Payment/images/create.svg" alt="create.svg" withLightbox=true width="" height="" /%}
 2. Select **Create an invoice**.
 ---
 ## Step 2: Select Customer

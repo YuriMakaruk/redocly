@@ -40,8 +40,6 @@ Click **Add new customer** to create a customer.
 ---
 ## Complete the Action
 
-### Complete the Action
-
 Click **Add customer** to create the customer using the provided details.
 
 {% img src="./images/Add new customer.svg" alt="Add new customer.svg" withLightbox=true width="" height="" /%}

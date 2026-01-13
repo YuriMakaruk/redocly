@@ -61,4 +61,4 @@ When you receive an invitation to join a ChaChing account, follow these steps to
 
 Once completed, your user account is activated and you will be redirected to the **ChaChing dashboard** with access permissions based on your assigned role.
 
-[**Role Permissions Matrix**] [RolePermissionsMatrix.md](./RolePermissionsMatrix.md)
+[RolePermissionsMatrix.md](./RolePermissionsMatrix.md)

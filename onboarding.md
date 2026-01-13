@@ -6,7 +6,7 @@ The ChaChing onboarding process guides you through setting up your account, conf
 
 When you complete the onboarding flow and approve the migration, ChaChing automatically handles all required steps behind the scenes:
 
-1. **Your imported Stripe subscriptions will be cancelled in Stripe.**
+1. Your imported Stripe subscriptions will be cancelled in Stripe.
     
     ChaChing takes over billing responsibility while preserving your historical records.
     

@@ -56,9 +56,7 @@ Shows all payments made by the customer.
 | **Date** | When the payment occurred. |
 ---
 ## Payment Method
-{% img src="./images/image 4.png" alt="image 4.png" withLightbox=true width="" height="" /%}
-
-
+{% img src="./images/Customer details (1).svg" alt="Customer details (1).svg" withLightbox=true width="" height="" /%}
 | **Element** | **Description** |
 | --- | --- |
 | **Payment method list** | Shows all payment methods of the customer. |

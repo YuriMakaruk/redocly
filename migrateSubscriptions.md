@@ -3,7 +3,9 @@
 The **Migrate Subscriptions** section allows you to manually start or continue migrating existing subscriptions from Stripe into ChaChing. This view provides selection controls, visibility into subscription data, and a clear summary before migration begins.
 ---
 ## Selection Controls
-{% img src="./images/migrate.png" alt="migrate.png" withLightbox=true width="" height="" /%}
+
+{% img src="./images/Subscription - selection option.svg" alt="Subscription - selection option.svg" withLightbox=true width="" height="" /%}
+
 | **Control** | **Description** |
 | --- | --- |
 | **Select all** | Selects all subscriptions currently listed in the table. |

@@ -28,8 +28,7 @@ Users can be filtered using the following criteria:
 To add a new user to your ChaChing account:
 
 1. Navigate to the **Manage** section and then click **Users**.
-   {% img srcSet="./users.png light, ./users.png dark"/%}
-   
+   {% img src="./Home (1).svg" alt="Home (1).svg" withLightbox=true width="" height="" /%}
 2. Click **Add user**.
 3. In the **Invite team member** window, enter the **Email address** of the person you want to invite.
 4. Select a **Role** for the user:
@@ -45,8 +44,7 @@ An invitation email will be sent to the specified address.
 The user will gain access to the ChaChing dashboard according to the assigned role after accepting the invitation.
 
 ### Accept Invitation and Complete Sign-Up
-
-![image.png](image.png)
+{% img src="./Sidebar menu (1).svg" alt="Sidebar menu (1).svg" withLightbox=true width="" height="" /%}
 
 When you receive an invitation to join a ChaChing account, follow these steps to activate your access:
 

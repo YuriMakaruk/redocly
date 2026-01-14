@@ -12,6 +12,7 @@ The **Migrate Subscriptions** section allows you to manually start or continue m
 | **Select all active** | Selects only subscriptions with an *active* status. |
 | **Select first 100** | Selects the first 100 subscriptions in the list. Useful for staged migrations. |
 ---
+
 ## Migration Summary Panel
 
 Displayed above the table and updated dynamically as subscriptions are selected.
@@ -21,6 +22,7 @@ Displayed above the table and updated dynamically as subscriptions are selected.
 | **Subscriptions selected** | Shows the total number of subscriptions selected for migration. |
 | **Total value** | Displays the combined monetary value of the selected subscriptions. |
 ---
+
 ## Subscriptions Table
 
 | **Column** | **Description** |

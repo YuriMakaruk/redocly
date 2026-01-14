@@ -36,12 +36,14 @@ Displayed above the table and updated dynamically as subscriptions are selected.
 | **Renewal date** | Next scheduled billing date after migration. |
 | **Amount** | Subscription price charged per billing period. |
 ---
+
 ## Continue Migration
 
 | **Action** | **Description** |
 | --- | --- |
 | **Continue** | Starts the migration process for the selected subscriptions. Subscriptions will be imported from Stripe and become visible in the **Subscriptions** section once completed. |
 ---
+
 ## Important Notes
 
 - Migration only starts after clicking **Continue**.

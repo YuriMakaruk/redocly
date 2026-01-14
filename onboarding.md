@@ -7,18 +7,18 @@ The ChaChing onboarding process guides you through setting up your account, conf
 When you complete the onboarding flow and approve the migration, ChaChing automatically handles all required steps behind the scenes:
 
 1. **Your imported Stripe subscriptions will be cancelled in Stripe.**
-    ChaChing takes over billing responsibility while preserving your historical records.
+    <br> ChaChing takes over billing responsibility while preserving your historical records.
 2. **Subscriptions will be billed on their normal renewal dates.**
-    Any past-due subscriptions will be retried automatically after migration.
+    <br> Any past-due subscriptions will be retried automatically after migration.
 3. **ChaChing will sync all necessary dependencies**, including:
     - Customers
     - Tax rates
     - Product lists
     - Related metadata
 4. **The sync process may take some time.**
-    During this period, customers can continue creating new subscriptions. ChaChing will monitor your Stripe account and import these automatically. You will receive a notification once the full import and synchronization are complete.
+    <br> During this period, customers can continue creating new subscriptions. ChaChing will monitor your Stripe account and import these automatically. You will receive a notification once the full import and synchronization are complete.
 5. **Your historical Stripe data remains intact.**
-    Nothing is deleted from your Stripe dashboard—your past information stays available for safe keeping and audit purposes.
+    <br> Nothing is deleted from your Stripe dashboard—your past information stays available for safe keeping and audit purposes.
 ---
 # Prerequisites
 Before onboarding into Chaching, the user must create the following:

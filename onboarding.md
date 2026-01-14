@@ -6,25 +6,18 @@ The ChaChing onboarding process guides you through setting up your account, conf
 
 When you complete the onboarding flow and approve the migration, ChaChing automatically handles all required steps behind the scenes:
 
-1. Your imported Stripe subscriptions will be cancelled in Stripe.
-    
+1. **Your imported Stripe subscriptions will be cancelled in Stripe.**
     ChaChing takes over billing responsibility while preserving your historical records.
-    
 2. **Subscriptions will be billed on their normal renewal dates.**
-    
     Any past-due subscriptions will be retried automatically after migration.
-    
 3. **ChaChing will sync all necessary dependencies**, including:
     - Customers
     - Tax rates
     - Product lists
     - Related metadata
 4. **The sync process may take some time.**
-    
     During this period, customers can continue creating new subscriptions. ChaChing will monitor your Stripe account and import these automatically. You will receive a notification once the full import and synchronization are complete.
-    
 5. **Your historical Stripe data remains intact.**
-    
     Nothing is deleted from your Stripe dashboard—your past information stays available for safe keeping and audit purposes.
 ---
 # Prerequisites
@@ -35,25 +28,22 @@ Before onboarding into Chaching, the user must create the following:
 | **Email account** | Required to verify your email and receive the verification link for Step 1. |
 | **Stripe account** | Required if you plan to migrate existing subscriptions from Stripe. |
 ---
-# Account Creation
+# A ccount Creation
 
 ## The Sign-Up Flow
 
 1. Navigate to:
-    
     [**https://dashboard.chaching.io/sign-in**](https://dashboard.chaching.io/sign-in)
-    
 2. From the sign-in page, click **Get Started**.
-{% img src="./images/Get started.svg" alt="Get started.svg" withLightbox=true width="" height="" /%}
+    {% img src="./images/Get started.svg" alt="Get started.svg" withLightbox=true width="" height="" /%}
 3. Enter the email address and click **Continue with email**.
-{% img src="./images/Email.svg" alt="Email.svg" withLightbox=true width="" height="" /%}
-You will be prompted to verify your email.
-{% img src="./images/Sidebar menu.svg" alt="Sidebar menu.svg" withLightbox=true width="" height="" /%}
-
+    {% img src="./images/Email.svg" alt="Email.svg" withLightbox=true width="" height="" /%}
+    <br> You will be prompted to verify your email.
+    {% img src="./images/Sidebar menu.svg" alt="Sidebar menu.svg" withLightbox=true width="" height="" /%}
 4. Open the email from Chaching and verify your email address.
-{% img src="./images/Email-1.svg" alt="Email-1.svg" withLightbox=true width="" height="" /%}
-Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
-{% img src="./images/Land.svg" alt="Land.svg" withLightbox=true width="" height="" /%}
+    {% img src="./images/Email-1.svg" alt="Email-1.svg" withLightbox=true width="" height="" /%}
+    <br> Once you click the link, you’ll be securely redirected back to ChaChing Onboarding screen.
+    {% img src="./images/Land.svg" alt="Land.svg" withLightbox=true width="" height="" /%}
 ---
 # Onboarding Flow
 
